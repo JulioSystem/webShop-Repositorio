@@ -38,39 +38,51 @@
 		<div class="grid-item grid-contacto__hero">
 			<div class="grid-contacto__form">
 				<div class="form__one">
-					<div>
-						<p>Contáctenos</p>
-						<p>Ubicación: Lima - Perú</p>
-						<p>Número: 999-999-999</p>
-						<p>Email: tuempresa.com</p>
+					<div class="grid-hero__subtitle">
+						<p class="titleSub">Contáctenos</p>
+						<div class="iconForm">
+							<div class="iconToIcon">
+								<i class="uil uil-location-point"></i>
+								<p>Lima - Perú</p>
+							</div>
+							<div class="iconToIcon">
+								<i class="uil uil-message"></i>
+								<p>tuempresa.com</p>
+							</div>
+							<div class="iconToIcon">
+								<i class="uil uil-dialpad-alt"></i>
+								<p>999-999-999</p>
+							</div>
+						</div>
 					</div>
-					<div>
+					<div class="contact_form--data">
 						<form action="" method="POST" enctype="multipart/form-data">
-							<div> <!-- Nombre -->
+							<div class="form__data spaceToSpaceX"> <!-- Nombre -->
 								<label for="nombre">Nombre:</label>
 								<input type="text" name="nombre" placeholder="Escribe tu nombre" id="nombre">
 							</div>
-							<div> <!-- Email -->
+							<div class="form__data"> <!-- Email -->
 								<label for="campo-email">Email:</label>
 								<input type="email" name="email" placeholder="Escribe tu email" id="campo-email">
 							</div>
-							<div> <!-- Mensaje -->
+							<div class="form__data"> <!-- Mensaje -->
 								<label for="campo-mensaje">Mensaje:</label>
 								<textarea  name="areatexto" id="campo-mensaje"></textarea>
 							</div>
-							<div> <!--Terminos y condiciones-->
-								<label for="terminos">Acepto los términos y condiciones</label>
-								<input type="checkbox" name="terminos" id="terminos" required>
+							<div class="form__data spaceToSpaceXY"> <!--Terminos y condiciones-->
+								<label for="terminos">Acepto los términos y condiciones
+									<input class="topToCenter" type="checkbox" name="terminos" id="terminos" required>
+								</label>
+								
 							</div>
-							<div> <!--Enviar y restablecer-->
-								<input type="submit" name="enviar" value="Enviar">
-								<input type="reset" name="resetear" value="Restablecer">
+							<div class="form__data"> <!--Enviar-->
+								<a href="#" class="reusableButton">Enviar</a>
 							</div>
 						</form>	
 					</div>
 				</div>
 				<div class="form__two">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.149885271133!2d-58.434477952297726!3d-34.58598723375084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCoderhouse!5e0!3m2!1ses-419!2spe!4v1635912828154!5m2!1ses-419!2spe" width="2000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.149885271133!2d-58.434477952297726!3d-34.58598723375084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCoderhouse!5e0!3m2!1ses-419!2spe!4v1635912828154!5m2!1ses-419!2spe"style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 			</div>
 		</div>
