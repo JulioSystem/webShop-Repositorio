@@ -82,6 +82,17 @@ body{
 	display: none;
 }
 
+
+.grid-navigation li a:hover{
+	color: #4525F2;
+	text-decoration: underline;
+}
+
+
+.grid-navigation .reusableButton a:hover{
+	color: #fff;
+}
+
 /* ===== GRID HERO ===== */
 .grid-hero{
 	grid-area: hero;
@@ -260,6 +271,16 @@ body{
 	color: #fff;
 }
 
+.grid-social li a:hover{
+	text-decoration: none;
+	color: #4525F2;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 4px;
+	transition: 0.3s;
+}
+
+
 /* ===== GRID FOOTER ===== */
 .grid-footer{
 	grid-area: footer;
@@ -320,6 +341,20 @@ body{
 .grid-galery__navigation .reusableButton a{
 	color: #fff;
 }
+
+.grid-galery__navigation li a:hover{
+	color: #4525F2;
+	text-decoration: underline;
+	transition: 0.3s;
+}
+
+
+.grid-galery__navigation .reusableButton a:hover{
+	color: #fff;
+	transition: 0.3s;
+}
+
+
 
 /* ===== GRID HERO ===== */
 .grid-galery__hero{
@@ -393,6 +428,23 @@ body{
 	text-decoration: none;
 }
 
+.containerPrueba{
+	transition: all 250ms ease-in-out;
+}
+
+.containerPrueba:hover{
+	transform: scale(1.1);
+	border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
 /* ===== GRID SOCIAL ===== */
 .grid-galery__social{
 	grid-area: social;
@@ -415,6 +467,17 @@ body{
 	text-decoration: none;
 	color: #fff;
 }
+
+.grid-galery__social li a:hover{
+	text-decoration: none;
+	color: #4525F2;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 4px;
+	transition: 0.3s;
+}
+
+
 
 /* ===== GRID FOOTER ===== */
 .grid-galery__footer{
@@ -479,6 +542,20 @@ body{
 .grid-navigation__icon{
 	display: none;
 }
+
+.grid-servicios__navigation li a:hover{
+	color: #4525F2;
+	text-decoration: underline;
+	transition: 0.3s;
+}
+
+
+.grid-servicios__navigation .reusableButton a:hover{
+	color: #fff;
+	transition: 0.3s;
+}
+
+
 
 /* ===== GRID HERO ===== */
 .grid-servicios__hero{
@@ -581,6 +658,14 @@ body{
 	color: #fff;
 }
 
+.grid-servicios__social li a:hover{
+	text-decoration: none;
+	color: #4525F2;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 4px;
+	transition: 0.3s;
+}
 
 /* ===== GRID FOOTER ===== */
 .grid-servicios__footer{
@@ -653,6 +738,18 @@ body{
 
 .grid-navigation__icon{
 	display: none;
+}
+
+.grid-ayuda__navigation li a:hover{
+	color: #4525F2;
+	text-decoration: underline;
+	transition: 0.3s;
+}
+
+
+.grid-ayuda__navigation .reusableButton a:hover{
+	color: #fff;
+	transition: 0.3s;
 }
 
 /* ===== GRID HERO ===== */
@@ -741,6 +838,14 @@ body{
 	color: #fff;
 }
 
+.grid-ayuda__social li a:hover{
+	text-decoration: none;
+	color: #4525F2;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 4px;
+	transition: 0.3s;
+}
 
 /* ===== GRID FOOTER ===== */
 .grid-ayuda__footer{
@@ -814,6 +919,20 @@ body{
 .grid-navigation__icon{
 	display: none;
 }
+
+.grid-contacto__navigation li a:hover{
+	color: #4525F2;
+	text-decoration: underline;
+	transition: 0.3s;
+}
+
+
+.grid-contacto__navigation .reusableButton a:hover{
+	color: #fff;
+	transition: 0.3s;
+}
+
+
 /* ===== GRID HERO ===== */
 
 .grid-contacto__hero{
@@ -911,6 +1030,14 @@ body{
 	color: #fff;
 }
 
+.grid-contacto__social li a:hover{
+	text-decoration: none;
+	color: #4525F2;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 4px;
+	transition: 0.3s;
+}
 
 /* ===== GRID FOOTER ===== */
 .grid-contacto__footer{
