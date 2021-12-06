@@ -629,6 +629,13 @@ body{
 	font-weight: 100;
 }
 
+.grid-main__box .lineWhite:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+
+
 
 /* ===== GRID WORK ===== */
 .grid-servicios__work{
