@@ -25,6 +25,9 @@ body{
 	margin-top: 15%;
 }
 
+.pt-8{
+	padding-top: 7%;
+}
 .d-flex{
 	margin: 0 30% 0 30%;
 }
@@ -161,6 +164,12 @@ body{
 
 /* =================================== EVENTOS ===================================*/
 
+/*===== HERO =====*/
+
+.heroEventos{
+	height: 60vh;
+}
+
 
 /*===== MAIN =====*/
 .eventosBox img{
@@ -179,7 +188,13 @@ body{
 }
 
 
-
+.eventosBackground{
+	background-color: #111;
+	background-position: left top;
+	background-repeat: repeat;
+	background-image: url("../assets/img/texture.png");
+	height: 40vh;
+}
 
 
 
