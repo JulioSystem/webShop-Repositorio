@@ -16,16 +16,32 @@ body{
 	display: grid;
 }
 
+/* =================================== CONFIGURACIONES HECHAS PARA BOOSTRAP ===================================*/
+.mt-10 {
+	margin-top: 10%;
+}
+
+.mt-15 {
+	margin-top: 15%;
+}
+
+.d-flex{
+	margin: 0 30% 0 30%;
+}
+
+.modal-footer{
+	justify-content: center;
+}
+
+
+/* =================================== INDEX ===================================*/
+
 /*===== HERO =====*/
 .containerHero{
 	height: 100vh;
 	background-image: url("../assets/img/hero.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.mt-15 {
-	margin-top: 15%;
 }
 
 /*===== MAIN =====*/
@@ -141,16 +157,51 @@ body{
 .footerArreglo ul li a{
 	text-decoration: none;
 
+}
 
+/* =================================== EVENTOS ===================================*/
+
+
+/*===== MAIN =====*/
+.eventosBox img{
+	height: 300px;
+	border-radius: 15px;
+}
+
+.containerPrueba{
+	transition: all 250ms ease-in-out;
+	
+}
+
+.containerPrueba:hover{
+	transform: scale(1.1);
+	border-radius: 15px;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+/* =================================== MEDIA QUERIES ===================================*/
+/* =================================== MEDIA QUERIES ===================================*/
 /* =================================== MEDIA QUERIES ===================================*/
 
 @media all and (max-width: 576px){
 
-	
+/* =================================== CONFIGURACIONES HECHAS PARA BOOSTRAP ===================================*/
+
+	.d-flex{
+		margin: 0 15% 0 15%;
+	}
+
+/* =================================== INDEX ===================================*/
 	/*===== HERO =====*/
 	.containerHero{
 		height: 100vh;
@@ -177,8 +228,7 @@ body{
 		grid-template-columns: repeat(1, 1fr);
 	}
 
-
-
+/* =================================== EVENTOS ===================================*/
 
 
 
