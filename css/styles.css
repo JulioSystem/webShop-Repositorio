@@ -12,10 +12,176 @@ body{
 	font-weight: 400;
 }
 
+.containerPrincipal{
+	display: grid;
+}
 
-.myHero{
+/*===== HERO =====*/
+.containerHero{
 	height: 100vh;
-	background-image: url("../assets/img/apexHero.jpg");
-	background-size: cover;
+	background-image: url("../assets/img/hero.png");
 	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mt-15 {
+	margin-top: 15%;
+}
+
+/*===== MAIN =====*/
+
+.grid-box{
+	/* CON GRID*/
+	display: grid;
+	grid-template-columns: repeat(3, 400px);
+	padding: 100px;
+	justify-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.grid-box img{
+	width: 300px;
+	border-radius: 10px;
+}
+
+.reusableBox{
+	padding: 20px;
+	width: 350px;
+	text-align: center;
+}
+
+
+/*===== FORO =====*/
+
+.myForo{
+	background-color: #0d6efd;
+}
+
+
+.foroServices img{
+	filter: invert(100%);
+	height: 75px;
+}
+
+
+.grid-boxNormal{
+	display: grid;
+	grid-template-columns: repeat(3, 400px);
+	padding: 100px;
+	justify-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+
+.mx-sm-6{
+	margin-right: -3rem ;
+    margin-left: -3rem ;
+}
+
+
+/*===== INFORMACION =====*/
+
+.grid-info{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.parrafoCatDog .colorCat{
+	color: #efa5a2;
+}
+
+.parrafoCatDog .colorDog{
+	color: #00afa5;
+}
+
+.cajaHeart{
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	background-image: url("../assets/img/mask_heart.png");
+	background-position: center center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	display: inline-table;
+}
+
+.colorOne{
+	background-color: #00afa5;
+}
+
+.colorTwo{
+	background-color: #000;
+}
+
+.colorThree{
+	background-color: #efa5a2;
+}
+
+.colorFour{
+	background-color: #666;
+}
+
+/*===== FOOTER =====*/
+.footerArreglo{
+	padding: 5%
+}
+
+.footerArreglo ul {
+	display: inline-block;
+}
+
+
+.footerArreglo ul li {
+	list-style: none;
+	
+
+}
+.footerArreglo ul li a{
+	text-decoration: none;
+
+
+}
+
+
+
+/* =================================== MEDIA QUERIES ===================================*/
+
+@media all and (max-width: 576px){
+
+	
+	/*===== HERO =====*/
+	.containerHero{
+		height: 100vh;
+		background-image: url("../assets/img/heroMobil.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	/*===== MAIN =====*/
+	.grid-box{
+		display: grid;
+		grid-template-columns: repeat(1, 1px);
+	}
+	/*===== FORO =====*/
+	.grid-boxNormal{
+		display: grid;
+		grid-template-columns: repeat(1, 1px);
+		text-align: center;
+	}
+
+	/*===== INFORMACION =====*/
+	.grid-info{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+
+
+
+
+
+
+
 }
