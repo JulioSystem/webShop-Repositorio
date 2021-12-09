@@ -206,10 +206,17 @@ margin-bottom: 6%;
 
 
 
+/* =================================== NOTICIAS ===================================*/
 
+.heroNoticias{
+	margin: 30%;
 
+}
 
-
+.navbar{
+	display: flex;
+	justify-content: flex-start;
+}
 
 
 
@@ -316,6 +323,24 @@ margin-bottom: 6%;
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 	}
+
+
+/* =================================== NOTICIAS ===================================*/
+
+	.heroNoticias{
+		margin: 0 0 40% 0;
+
+	}
+
+
+
+
+
+
+
+
+
+
 
 /* =================================== CONTACTO ===================================*/
 
