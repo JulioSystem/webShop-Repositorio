@@ -44,7 +44,6 @@ margin-bottom: 6%;
 	justify-content: center;
 }
 
-
 /* =================================== INDEX ===================================*/
 
 /*===== HERO =====*/
@@ -78,19 +77,16 @@ margin-bottom: 6%;
 	text-align: center;
 }
 
-
 /*===== FORO =====*/
 
 .myForo{
 	background-color: #0d6efd;
 }
 
-
 .foroServices img{
 	filter: invert(100%);
 	height: 75px;
 }
-
 
 .grid-boxNormal{
 	display: grid;
@@ -101,12 +97,10 @@ margin-bottom: 6%;
 	gap: 50px;
 }
 
-
 .mx-sm-6{
 	margin-right: -3rem ;
     margin-left: -3rem ;
 }
-
 
 /*===== INFORMACION =====*/
 
@@ -178,7 +172,6 @@ margin-bottom: 6%;
 	height: 60vh;
 }
 
-
 /*===== MAIN =====*/
 .eventosBox img{
 	height: 300px;
@@ -195,7 +188,6 @@ margin-bottom: 6%;
 	border-radius: 15px;
 }
 
-
 .eventosBackground{
 	background-color: #111;
 	background-position: left top;
@@ -203,8 +195,6 @@ margin-bottom: 6%;
 	background-image: url("../assets/img/texture.png");
 	height: 40vh;
 }
-
-
 
 /* =================================== NOTICIAS ===================================*/
 
@@ -218,28 +208,13 @@ margin-bottom: 6%;
 	justify-content: flex-start;
 }
 
-
-
-
 /* =================================== ADOPTA ===================================*/
-
 
 .heroAdopta{
 	margin: 0 20% 0 20%;
 }
 
-
-
-
-
-
-
-
-
-
 /* =================================== CONTACTO ===================================*/
-
-
 
 .containerForm {
     display: flex;
@@ -263,29 +238,6 @@ margin-bottom: 6%;
 	padding-left: 20px;
 	border-radius: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* =================================== MEDIA QUERIES ===================================*/
 /* =================================== MEDIA QUERIES ===================================*/
@@ -326,7 +278,6 @@ margin-bottom: 6%;
 		grid-template-columns: repeat(1, 1fr);
 	}
 
-
 /* =================================== NOTICIAS ===================================*/
 
 	.heroNoticias{
@@ -334,22 +285,11 @@ margin-bottom: 6%;
 
 	}
 
-
 /* =================================== ADOPTA ===================================*/
-
 
 	.heroAdopta{
 		margin: 0 5% 0 5%;
 	}
-
-
-
-
-
-
-
-
-
 
 /* =================================== CONTACTO ===================================*/
 
