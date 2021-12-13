@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Serif:wght@700&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'PT Serif', serif;
+ */
+
+:root{
+    --principalColor: #1F1F1F;
+    --secondColor: #737373 ;
+    --textPrincipal: 'PT Serif', serif;
+    --textPrinWeight: 700;
+    --textSecondary: 'Open Sans', sans-serif;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-weight: 400;
+    font-family: var(--textSecondary)
+}
+
+
+/* =================================== INICIO ===================================*/
+/* =================================== INICIO ===================================*/
+/* =================================== INICIO ===================================*/
+
+/* ========== CONTAINER ==========*/
+/* .principalContainer{
+    
+} */
+/* ========== NAVIGATION ==========*/
+.flexNavigation{
+    display: flex;
+}
+
+/* ========== HERO ==========*/
+
+.flexHero{
+    display: flex;
+    background-image: url("../assets/img/principalHero.jpg");
+    background-size: cover;
+    height: 95vh;
+}
+
+.heroText{
+    width: 950px;
+}
+
+.firstTitle{
+    font-family: var(--textPrincipal);
+}
+
+.secondTitle{
+    font-family: var(--textSecondary);
+}
+
+
+
+
+
+
+
+/* 
+
+
+COLOR #4C45FF
+
+*/
