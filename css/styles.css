@@ -27,6 +27,9 @@ body{
     padding: 8px 40px;
 }
 
+.me-10{
+    margin-right: 10%;
+}
 
 
 /* =================================== INICIO ===================================*/
@@ -65,16 +68,147 @@ body{
 
 /* ========== BANNER 1 ==========*/
 
-.circleIcon{
-    padding: 3px 6px ;
-    border-radius: 50%;
-}
-
-
 .gridBox{
     display: grid;
-    justify-items: center;
+
 }
+
+.circleIcon{
+    width: 50px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.circleIcon i{
+    padding-top: 5px;
+}
+
+
+
+/* ========== DESTACADOS DE LA SEMANA ==========*/
+
+.secondColor{
+    color: #aaa;
+}
+
+.parrafoExacto{
+    width: 700px;
+}
+
+.boxImg img{
+    width: 450px;
+    height: 300px;
+}
+
+
+/* ========== INSPIRACIONES ==========*/
+.flexInspiration{
+    height: 600px;
+    background-image: url("../assets/img/secondHero.jpg");
+    background-size: cover;
+}
+
+/* ========== MÁS RECIENTES DEL MES ==========*/
+
+
+
+
+/* ========== SPOT PRODUCT ==========*/
+.spotProduct{
+    background-color: #ddd;
+}
+
+.spotProduct img{
+    width: 900px;
+    height: 650px;
+}
+
+/* ========== NOTICIAS NUEVAS ==========*/
+
+
+.borderNotice{
+    width: 452px;
+
+}
+/* ========== BANNER 2 ==========*/
+
+.flexBanner2{
+    background-color: #ddd;
+    height: 250px;
+}
+
+/* ========== FOOTER ==========*/
+
+.flexFooter{
+    height: 200px
+}
+
+
+
+.footerIcon a{
+    text-decoration: none;
+    
+}
+
+.footerIcon i{
+    color: #000;
+}
+
+.hola1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+/* =================================== MEDIA QUERIES ===================================*/
+/* =================================== MEDIA QUERIES ===================================*/
+/* =================================== MEDIA QUERIES ===================================*/
+
+@media all and (max-width: 576px){
+
+    /* ========== DESTACADOS DE LA SEMANA ==========*/
+    .parrafoExacto{
+        width: 320px;
+    }
+
+    .boxImg img{
+        width: 290px;
+        height: 195px;
+    }
+
+    /* ========== SPOT PRODUCT ==========*/
+    .spotProduct img{
+        width: 300px;
+        height: 280px;
+    }
+
+    /* ========== NOTICIAS NUEVAS ==========*/
+
+    .borderNotice{
+        width: 292px;
+    }
+
+
+    /* ========== BANNER 2 ==========*/
+    .flexBanner2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .me-10{
+        margin-right: 0px;
+    }
+}
+
+
+
+
+
+
+
 
 
 /* 
