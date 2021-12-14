@@ -22,6 +22,12 @@ body{
     font-family: var(--textSecondary)
 }
 
+/* ========== BOOSTRAP ==========*/
+.btn-padding{
+    padding: 8px 40px;
+}
+
+
 
 /* =================================== INICIO ===================================*/
 /* =================================== INICIO ===================================*/
@@ -57,10 +63,18 @@ body{
     font-family: var(--textSecondary);
 }
 
+/* ========== BANNER 1 ==========*/
+
+.circleIcon{
+    padding: 3px 6px ;
+    border-radius: 50%;
+}
 
 
-
-
+.gridBox{
+    display: grid;
+    justify-items: center;
+}
 
 
 /* 
