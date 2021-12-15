@@ -139,7 +139,17 @@ body{
     color: #000;
 }
 
-/* =================================== MEDIA QUERIES ===================================*/
+/* =================================== NOSOTROS ===================================*/
+
+/* ========== HERO ==========*/
+.heroNosotros{
+    display: flex;
+    background-image: url("../assets/img/nosotrosHero.jpg");
+    background-size: cover;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -184,6 +194,17 @@ body{
 
     .me-10{
         margin-right: 0px;
+    }
+
+
+
+    /* =================================== NOSOTROS ===================================*/
+
+    /* ========== HERO ==========*/
+    .heroNosotros{
+        display: flex;
+        background-image: url("../assets/img/principalHero.jpg");
+        background-size: cover;
     }
 }
 
