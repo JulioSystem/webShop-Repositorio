@@ -31,22 +31,19 @@ body{
     margin-right: 10%;
 }
 
-
 /* =================================== INICIO ===================================*/
 /* =================================== INICIO ===================================*/
 /* =================================== INICIO ===================================*/
 
 /* ========== CONTAINER ==========*/
-/* .principalContainer{
-    
-} */
+
+
 /* ========== NAVIGATION ==========*/
 .flexNavigation{
     display: flex;
 }
 
 /* ========== HERO ==========*/
-
 .flexHero{
     display: flex;
     background-image: url("../assets/img/principalHero.jpg");
@@ -67,10 +64,8 @@ body{
 }
 
 /* ========== BANNER 1 ==========*/
-
 .gridBox{
     display: grid;
-
 }
 
 .circleIcon{
@@ -84,10 +79,7 @@ body{
     padding-top: 5px;
 }
 
-
-
 /* ========== DESTACADOS DE LA SEMANA ==========*/
-
 .secondColor{
     color: #aaa;
 }
@@ -101,7 +93,6 @@ body{
     height: 300px;
 }
 
-
 /* ========== INSPIRACIONES ==========*/
 .flexInspiration{
     height: 600px;
@@ -110,7 +101,6 @@ body{
 }
 
 /* ========== MÁS RECIENTES DEL MES ==========*/
-
 
 
 
@@ -125,42 +115,36 @@ body{
 }
 
 /* ========== NOTICIAS NUEVAS ==========*/
-
-
 .borderNotice{
     width: 452px;
 
 }
-/* ========== BANNER 2 ==========*/
 
+/* ========== BANNER 2 ==========*/
 .flexBanner2{
     background-color: #ddd;
     height: 250px;
 }
 
 /* ========== FOOTER ==========*/
-
 .flexFooter{
     height: 200px
 }
 
-
-
 .footerIcon a{
     text-decoration: none;
-    
 }
 
 .footerIcon i{
     color: #000;
 }
 
-.hola1{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff;
-}
+/* =================================== MEDIA QUERIES ===================================*/
+
+
+
+
+
 /* =================================== MEDIA QUERIES ===================================*/
 /* =================================== MEDIA QUERIES ===================================*/
 /* =================================== MEDIA QUERIES ===================================*/
@@ -203,17 +187,3 @@ body{
     }
 }
 
-
-
-
-
-
-
-
-
-/* 
-
-
-COLOR #4C45FF
-
-*/
