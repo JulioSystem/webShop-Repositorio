@@ -151,9 +151,49 @@ body{
     justify-content: center;
 }
 
+/* ========== MISIÓN, VISIÓN Y EMPLEOS ==========*/
+.borderGeneral{
+    width: 1080px;
+    height: 400px;
+    
+}
+
+.borderGeneral img{
+    width: 400px;
+    height: 350px;
+}
+
+.generalFirst{
+    width: 500px;
+    padding: 5% 5% 5% 0;
+}
+
+.generalUnico{
+    width: 500px;
+    padding: 5% 5% 5% 5%;
+}
+
+/* ========== SERVICIOS ==========*/
+.gridBoxing{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0% 10% 0% 10%;
+    gap: 100px;
+}
 
 
 
+/* ========== BANNER ==========*/
+.bannerServicios{
+    background-image: url("../assets/img/bannerNosotros.jpg");
+    height: 60vh;
+}
+
+/* ========== PORCENTAJE ==========*/
+.porcentajeNosotros{
+    background-color: #ddd;
+    height: 30vh;
+}
 
 /* =================================== MEDIA QUERIES ===================================*/
 /* =================================== MEDIA QUERIES ===================================*/
@@ -206,5 +246,58 @@ body{
         background-image: url("../assets/img/principalHero.jpg");
         background-size: cover;
     }
+
+    /* ========== MISIÓN, VISIÓN Y EMPLEOS ==========*/
+    .borderGeneral{
+        width: 300px;
+        height: 600px;
+    }
+
+    .borderGeneral img{
+        width: 250px;
+        height: 200px;
+    }
+
+    .generalFirst{
+        width: 250px;
+        height: 350px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .generalUnico{
+        padding-top: 10%;
+    }
+
+
+    /* ========== SERVICIOS ==========*/
+    .gridBoxing{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2% 10% 5% 10%;
+        gap: 20px;
+    }
+
+    .borderGen{
+        width: 300px;
+    }
+
+    /* ========== PORCENTAJE ==========*/
+    .porcentajeNosotros{
+        flex-direction: column;
+        height: 140vh;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
