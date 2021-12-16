@@ -28,22 +28,23 @@ body{
 }
 
 
+.me-10{
+    margin-right: 10%;
+}
 
 /* =================================== INICIO ===================================*/
 /* =================================== INICIO ===================================*/
 /* =================================== INICIO ===================================*/
 
 /* ========== CONTAINER ==========*/
-/* .principalContainer{
-    
-} */
+
+
 /* ========== NAVIGATION ==========*/
 .flexNavigation{
     display: flex;
 }
 
 /* ========== HERO ==========*/
-
 .flexHero{
     display: flex;
     background-image: url("../assets/img/principalHero.jpg");
@@ -69,17 +70,230 @@ body{
     padding: 3px 6px ;
     border-radius: 50%;
 }
+.gridBox{
+    display: grid;
+}
 
+.circleIcon{
+    width: 50px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.circleIcon i{
+    padding-top: 5px;
+}
+
+/* ========== DESTACADOS DE LA SEMANA ==========*/
+.secondColor{
+    color: #aaa;
+}
+
+.parrafoExacto{
+    width: 700px;
+}
+
+.boxImg img{
+    width: 450px;
+    height: 300px;
+}
+
+/* ========== INSPIRACIONES ==========*/
+.flexInspiration{
+    height: 600px;
+    background-image: url("../assets/img/secondHero.jpg");
+    background-size: cover;
+}
+
+/* ========== MÁS RECIENTES DEL MES ==========*/
+
+
+
+/* ========== SPOT PRODUCT ==========*/
+.spotProduct{
+    background-color: #ddd;
+}
+
+.spotProduct img{
+    width: 900px;
+    height: 650px;
+}
+
+/* ========== NOTICIAS NUEVAS ==========*/
+.borderNotice{
+    width: 452px;
+
+}
+
+/* ========== BANNER 2 ==========*/
+.flexBanner2{
+    background-color: #ddd;
+    height: 250px;
+}
+
+/* ========== FOOTER ==========*/
+.flexFooter{
+    height: 200px
+}
+
+.footerIcon a{
+    text-decoration: none;
+}
+
+.footerIcon i{
+    color: #000;
+}
+
+/* =================================== NOSOTROS ===================================*/
+/* =================================== NOSOTROS ===================================*/
+/* =================================== NOSOTROS ===================================*/
+
+/* ========== HERO ==========*/
+.heroNosotros{
+    display: flex;
+    background-image: url("../assets/img/nosotrosHero.jpg");
+    background-size: cover;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========== MISIÓN, VISIÓN Y EMPLEOS ==========*/
+.borderGeneral{
+    width: 1080px;
+    height: 400px;
+    
+}
+
+.borderGeneral img{
+    width: 400px;
+    height: 350px;
+}
+
+.generalFirst{
+    width: 500px;
+    padding: 5% 5% 5% 0;
+}
+
+.generalUnico{
+    width: 500px;
+    padding: 5% 5% 5% 5%;
+}
+
+/* ========== SERVICIOS ==========*/
+.gridBoxing{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0% 10% 0% 10%;
+    gap: 100px;
+}
+
+/* ========== BANNER ==========*/
+.bannerServicios{
+    background-image: url("../assets/img/bannerNosotros.jpg");
+    height: 60vh;
+}
+
+/* ========== PORCENTAJE ==========*/
+.porcentajeNosotros{
+    background-color: #ddd;
+    height: 30vh;
+}
+
+/* =================================== MEDIA QUERIES ===================================*/
+/* =================================== MEDIA QUERIES ===================================*/
+/* =================================== MEDIA QUERIES ===================================*/
+
+@media all and (max-width: 576px){
+
+    /* =================================== INICIO  ===================================*/
+    /* ========== DESTACADOS DE LA SEMANA ==========*/
+    .parrafoExacto{
+        width: 320px;
+    }
+
+    .boxImg img{
+        width: 290px;
+        height: 195px;
+    }
+
+    /* ========== SPOT PRODUCT ==========*/
+    .spotProduct img{
+        width: 300px;
+        height: 280px;
+    }
+
+    /* ========== NOTICIAS NUEVAS ==========*/
+
+    .borderNotice{
+        width: 292px;
+    }
 
 .gridBox{
     display: grid;
     justify-items: center;
 }
 
+    /* ========== BANNER 2 ==========*/
+    .flexBanner2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 
-/* 
+    .me-10{
+        margin-right: 0px;
+    }
 
+    /* =================================== NOSOTROS ===================================*/
 
-COLOR #4C45FF
+    /* ========== HERO ==========*/
+    .heroNosotros{
+        display: flex;
+        background-image: url("../assets/img/principalHero.jpg");
+        background-size: cover;
+    }
 
-*/
+    /* ========== MISIÓN, VISIÓN Y EMPLEOS ==========*/
+    .borderGeneral{
+        width: 300px;
+        height: 600px;
+    }
+
+    .borderGeneral img{
+        width: 250px;
+        height: 200px;
+    }
+
+    .generalFirst{
+        width: 250px;
+        height: 350px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .generalUnico{
+        padding-top: 10%;
+    }
+
+    /* ========== SERVICIOS ==========*/
+    .gridBoxing{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2% 10% 5% 10%;
+        gap: 20px;
+    }
+
+    .borderGen{
+        width: 300px;
+    }
+
+    /* ========== PORCENTAJE ==========*/
+    .porcentajeNosotros{
+        flex-direction: column;
+        height: 140vh;
+    }
+}
+
