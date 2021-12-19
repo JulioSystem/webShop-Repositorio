@@ -1,449 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Serif:wght@700&display=swap');
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'PT Serif', serif;
- */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,400;0,600;1,400&display=swap");
+/* font-family: 'Urbanist', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-:root{
-    --principalColor: #1F1F1F;
-    --secondColor: #737373 ;
-    --textPrincipal: 'PT Serif', serif;
-    --textPrinWeight: 700;
-    --textSecondary: 'Open Sans', sans-serif;
-}
+body {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400; }
 
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
+/* ===== REUSABLE BUTTON ===== */
+.reusableButton {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  background-size: 300%;
+  transition: 0.5s;
+  background-image: linear-gradient(to left, #234481, #4525F2); }
+  .reusableButton:hover {
+    background-position: right;
+    color: #000; }
 
-body{
-	font-weight: 400;
-    font-family: var(--textSecondary)
-}
+/* ===== GRID CONTAINER HOME ===== */
+.grid-container__inicio {
+  display: grid;
+  grid-template-areas: "header navigation navigation" "hero hero hero" "main main main" "banner banner banner" "social social social" "footer footer footer"; }
 
-/* ========== BOOSTRAP ==========*/
-.btn-padding{
-    padding: 8px 40px;
-}
+.grid-item {
+  padding: 10px; }
 
-.me-10{
-    margin-right: 10%;
-}
+/* ===== GRID HEADER ===== */
+.grid-header {
+  grid-area: header;
+  display: flex; }
 
+/* ===== GRID NAVIGATION ===== */
+.grid-navigation {
+  grid-area: navigation;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .grid-navigation li {
+    list-style: none;
+    display: inline-block; }
+    .grid-navigation li a {
+      text-decoration: none;
+      color: #000;
+      margin: 0 10px; }
+      .grid-navigation li a:hover {
+        color: #4525F2;
+        text-decoration: underline; }
+  .grid-navigation .reusableButton a {
+    color: #fff; }
+    .grid-navigation .reusableButton a:hover {
+      color: #fff; }
 
-.dropdown-item.active, .dropdown-item:active {
+.grid-navigation__icon {
+  display: none; }
+
+/* ===== GRID HERO ===== */
+.grid-hero {
+  grid-area: hero;
+  height: 92.5vh;
+  display: flex;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/proyecto-one-a94fe.appspot.com/o/inicioPrincipal.png?alt=media&token=ac7969ff-0694-4ab6-8ad1-2e44988b8377");
+  background-size: contain;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 45px; }
+  .grid-hero .grid-hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%; }
+    .grid-hero .grid-hero__text .grid-hero__text--principal {
+      font-size: 4.68rem;
+      font-family: 'Urbanist', sans-serif;
+      font-weight: 600;
+      color: #4525F2; }
+    .grid-hero .grid-hero__text .grid-hero__text--secondary {
+      text-align: center;
+      font-size: 1.25rem;
+      font-family: 'Urbanist', sans-serif;
+      font-weight: 300;
+      padding: 0.5% 0 3% 0; }
+    .grid-hero .grid-hero__text .reusableButton {
+      font-size: 1.2rem; }
+  .grid-hero a {
+    text-decoration: none;
+    color: #000; }
+  .grid-hero .reusableButton {
+    color: #fff; }
+
+/* ===== GRID MAIN ===== */
+.grid-main {
+  grid-area: main; }
+  .grid-main .grid-main__subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .grid-main .grid-main__subtitle .titleSub {
+      font-weight: 600;
+      font-size: 2.8rem;
+      padding-top: 80px;
+      color: #4525F2; }
+      .grid-main .grid-main__subtitle .titleSub p {
+        text-align: center;
+        margin: 0 30% 0 30%; }
+  .grid-main .reusableButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -3% 46% 5% 46%; }
+    .grid-main .reusableButton a {
+      text-decoration: none;
+      color: #fff; }
+
+.grid-main__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 100px;
+  justify-items: center;
+  justify-content: center;
+  gap: 20px; }
+  .grid-main__box .cat-date {
+    font-weight: 600;
+    font-size: 15px; }
+  .grid-main__box .titleBox {
+    font-weight: 600;
+    font-size: 25px; }
+  .grid-main__box img {
+    width: 300px;
+    border-radius: 10px; }
+
+.reusableBox {
+  padding: 20px;
+  width: 350px;
+  text-align: center; }
+  .reusableBox a {
+    text-decoration: none;
     color: #fff;
-    text-decoration: none;
-    background-color: #000;
-}
-
-/* =================================== INICIO ===================================*/
-/* =================================== INICIO ===================================*/
-/* =================================== INICIO ===================================*/
-
-/* ========== CONTAINER ==========*/
-
-
-/* ========== NAVIGATION ==========*/
-.flexNavigation{
-    display: flex;
-}
-
-/* ========== HERO ==========*/
-.flexHero{
-    display: flex;
-    background-image: url("../assets/img/nosotrosHero.jpg");
-    background-size: cover;
-    height: 95vh;
-}
-
-.heroText{
-    width: 950px;
-}
-
-.firstTitle{
-    font-family: var(--textPrincipal);
-}
-
-.secondTitle{
-    font-family: var(--textSecondary);
-}
-
-/* ========== BANNER 1 ==========*/
-
-.circleIcon{
-    padding: 3px 6px ;
-    border-radius: 50%;
-}
-.gridBox{
-    display: grid;
-}
-
-.circleIcon{
-    width: 50px;
-    height: 52px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-
-.circleIcon i{
-    padding-top: 5px;
-}
-
-/* ========== DESTACADOS DE LA SEMANA ==========*/
-.secondColor{
-    color: #aaa;
-}
-
-.parrafoExacto{
-    width: 700px;
-}
-
-.boxImg img{
-    width: 450px;
-    height: 300px;
-}
-
-/* ========== INSPIRACIONES ==========*/
-.flexInspiration{
-    height: 600px;
-    background-image: url("../assets/img/secondHero.jpg");
-    background-size: cover;
-}
-
-/* ========== MÁS RECIENTES DEL MES ==========*/
-
-
-
-/* ========== SPOT PRODUCT ==========*/
-.spotProduct{
-    background-color: #ddd;
-}
-
-.spotProduct img{
-    width: 900px;
-    height: 650px;
-}
-
-/* ========== NOTICIAS NUEVAS ==========*/
-.borderNotice{
-    width: 452px;
-
-}
-
-/* ========== BANNER 2 ==========*/
-.flexBanner2{
-    background-color: #ddd;
-    height: 250px;
-}
-
-/* ========== FOOTER ==========*/
-.flexFooter{
-    height: 200px
-}
-
-.footerIcon a{
-    text-decoration: none;
-}
-
-.footerIcon i{
-    color: #000;
-}
-
-/* =================================== NOSOTROS ===================================*/
-/* =================================== NOSOTROS ===================================*/
-/* =================================== NOSOTROS ===================================*/
-
-/* ========== HERO ==========*/
-.heroNosotros{
-    display: flex;
-    background-image: url("../assets/img/principalHero.jpg");
-    background-size: cover;
-    height: 95vh;
-    align-items: center;
-}
-
-/* ========== MISIÓN, VISIÓN Y EMPLEOS ==========*/
-.borderGeneral{
-    width: 1080px;
-    height: 400px;
-    
-}
-
-.borderGeneral img{
-    width: 400px;
-    height: 350px;
-}
-
-.generalFirst{
-    width: 500px;
-    padding: 5% 5% 5% 0;
-}
-
-.generalUnico{
-    width: 500px;
-    padding: 5% 5% 5% 5%;
-}
-
-/* ========== SERVICIOS ==========*/
-.gridBoxing{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0% 10% 0% 10%;
-    gap: 100px;
-}
-
-/* ========== BANNER ==========*/
-.bannerServicios{
-    background-image: url("../assets/img/bannerNosotros.jpg");
-    height: 60vh;
-}
-
-/* ========== PORCENTAJE ==========*/
-.porcentajeNosotros{
-    background-color: #ddd;
-    height: 30vh;
-}
-
-
-
-/* =================================== GALERIA ===================================*/
-/* =================================== GALERIA ===================================*/
-/* =================================== GALERIA ===================================*/
-
-/* ========== HERO ==========*/
-.heroGaleria{
-    display: flex;
-    background-image: url("../assets/img/galeriaHero.jpg");
-    background-size: cover;
-    height: 95vh;
-}
-
-.hero-texto-galeria{
-    width: 800px;
-}
-
-/* =================================== SERVICIOS===================================*/
-/* =================================== SERVICIOS===================================*/
-/* =================================== SERVICIOS===================================*/
-
-/* ========== HERO ==========*/
-.heroServicios{
-    display: flex;
-    background-image: url("../assets/img/serviciosHero.jpg");
-    background-size: cover;
-    height: 95vh;
-    align-items: center;
-}
-
-
-/* =================================== CONTACTO ===================================*/
-/* =================================== CONTACTO ===================================*/
-/* =================================== CONTACTO ===================================*/
-
-/* ========== HERO ==========*/
-.heroContacto{
-    height: 95vh;
-}
-
-.containerForm {
-    display: flex;
-    align-items: center;
-    justify-content: center;;
-	border: 4px solid #000;
-	padding: 40px 40px 40px 40px;
-	border-radius: 30px;
-	margin: 0 20% 0 20%;
-}
-
-.form-floating>.form-control {
-    padding: 1rem 3.75rem;
-}
-
-
-.containerForm iframe{
-	height: 290px;
-	width: 405px;
-	padding-left: 20px;
-}
-
-
-
-
-
-
-
-
-
-/* =================================== MEDIA QUERIES ===================================*/
-/* =================================== MEDIA QUERIES ===================================*/
-/* =================================== MEDIA QUERIES ===================================*/
-/* =================================== MEDIA QUERIES ===================================*/
-/* =================================== MEDIA QUERIES ===================================*/
-/* =================================== MEDIA QUERIES ===================================*/
-
-@media all and (max-width: 576px){
-
-    /* =================================== INICIO  ===================================*/
-    /* ========== HERO ==========*/
-    .flexHero{
-        background-image: url("../assets/img/galeriaHero.jpg"); /* Solo para que cambie a fondo claro*/
-    }
-    /* ========== DESTACADOS DE LA SEMANA ==========*/
-    .parrafoExacto{
-        width: 320px;
-    }
-
-    .boxImg img{
-        width: 290px;
-        height: 195px;
-    }
-
-    /* ========== SPOT PRODUCT ==========*/
-    .spotProduct img{
-        width: 300px;
-        height: 280px;
-    }
-
-    /* ========== NOTICIAS NUEVAS ==========*/
-
-    .borderNotice{
-        width: 292px;
-    }
-
-.gridBox{
-    display: grid;
-    justify-items: center;
-}
-
-    /* ========== BANNER 2 ==========*/
-    .flexBanner2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .me-10{
-        margin-right: 0px;
-    }
-
-    /* =================================== NOSOTROS ===================================*/
-
-    /* ========== HERO ==========*/
-    .heroNosotros{
-        display: flex;
-        background-image: url("../assets/img/principalHero.jpg");
-        background-size: cover;
-    }
-
-    /* ========== MISIÓN, VISIÓN Y EMPLEOS ==========*/
-    .borderGeneral{
-        width: 300px;
-        height: 600px;
-    }
-
-    .borderGeneral img{
-        width: 250px;
-        height: 200px;
-    }
-
-    .generalFirst{
-        width: 250px;
-        height: 350px;
-        padding: 0;
-        text-align: center;
-    }
-
-    .generalUnico{
-        padding-top: 10%;
-    }
-
-    /* ========== SERVICIOS ==========*/
-    .gridBoxing{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding: 2% 10% 5% 10%;
-        gap: 20px;
-    }
-
-    .borderGen{
-        width: 300px;
-    }
-
-    /* ========== PORCENTAJE ==========*/
-    .porcentajeNosotros{
-        flex-direction: column;
-        height: 140vh;
-    }
-    /* =================================== GALERIA ===================================*/
-
-    /* ========== HERO ==========*/
-    .heroGaleria{
-        display: flex;
-        background-image: url("../assets/img/galeriaHero.jpg");
-        background-size: cover;
-        height: 95vh;
-    }
-
-    .hero-texto-galeria{
-        width: 300px;
-}
-
-    /* =================================== SERVICIOS ===================================*/
-
-    /* ========== HERO ==========*/
-    .heroServicios{
-        background-image: url("../assets/img/galeriaHero.jpg"); /* Solo para que cambie a fondo claro*/
-    }
-
-
-
-
-
-
-
-
-    /* =================================== CONTACTO ===================================*/
-    .heroContacto{
-        height: 150vh;
-    }
-
-    .containerForm {
-        display: flex;
-        flex-direction: column;
-        border: 4px solid #000;
-        border-radius: 30px;
-        margin: 0%;
-        
-    }
-
-    .containerForm iframe{
-        height: 300px;
-        width: 230px;
-        padding-left: 0px;
-        padding-top: 50px;
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-/* CREO QUE YA ESTÁ SOLUCIONADO */
-
-/* ¡HOLAAAAAAA, SANTI!*/
+    display: flex; }
+
+/* ===== GRID BANNER ===== */
+.grid-banner {
+  grid-area: banner;
+  background-color: #D7DCDE;
+  padding: 108px;
+  display: flex;
+  justify-content: space-evenly; }
+  .grid-banner a {
+    text-decoration: none; }
+  .grid-banner p {
+    font-size: 2rem;
+    font-weight: 600; }
+  .grid-banner .reusableButton {
+    padding: 10px 30px 10px 30px; }
+  .grid-banner .reusableButton {
+    background-color: #fff; }
+
+/* ===== GRID SOCIAL ===== */
+.grid-social {
+  grid-area: social;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4525F2;
+  color: #fff;
+  padding: 50px; }
+  .grid-social li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding-top: 5%; }
+    .grid-social li a {
+      text-decoration: none;
+      color: #fff; }
+    .grid-social li:hover {
+      text-decoration: none;
+      color: #4525F2;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 4px;
+      transition: 0.3s; }
+
+/* ===== GRID FOOTER ===== */
+.grid-footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4525F2;
+  padding: 20px;
+  color: #fff; }
+  .grid-footer p {
+    margin: 0 10px; }
