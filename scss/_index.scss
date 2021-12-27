@@ -1,0 +1,191 @@
+/* ==================== HEADER ==================== */
+#header{
+    background-image: url("../assets/img/indexPrincipal.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    @include j-padding(3rem, 20rem, 0, 20rem);
+
+    &::before{
+        content: "";
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    @include j-media-up(md){
+        @include j-padding(3rem, .5rem, 0, .5rem);
+    }
+
+
+
+}
+
+/* ===== Principal Title ===== */
+.principalTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    .title__heading{
+        font-weight: 700;
+        text-align: center;
+        width: 900px;
+        @include j-media-up(md){
+            width: auto;
+        }
+    }
+    .title__description{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 500;
+        width: 750px;
+        text-align: center;
+        color: $grisColor;
+        @include j-media-up(md){
+            width: auto;
+        }
+    }
+}
+/* ===== Scroll down ===== */
+.scrolldown{
+    color: $grisColor;
+}
+
+/* ==================== MAIN ==================== */
+
+#main{
+    display: none;
+}
+
+.helloImg{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+
+}
+
+/* ===== First Section ===== */
+.firstSection{
+    background-color: $grisColor;
+    @include j-padding(5rem, 20rem, 5rem, 20rem);
+}
+
+.container__boxing{
+        
+    .boxing__reusable{
+        @extend %fco-container;
+        padding: 3% 0;
+        .boxing-text{
+            > h2{
+                @extend %firstTitle;
+            }
+            > p{
+                @extend %secondTitle;
+            }
+            margin: 0 2%
+        }
+        
+    }
+}
+
+/* ===== Second Section ===== */
+.secondSection{
+    background-color: $firstColor;
+    color: $thirdColor;
+    @include j-padding(5rem, 20rem, 5rem, 20rem);
+    
+}
+
+.misionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .boxing-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        > h2{
+            @extend %firstTitle;
+        }
+
+        > p{
+            @extend %secondTitle;
+            width: 600px;
+            padding-right: 20px;
+        }
+    }
+    .boxing-img{
+        display: grid;
+        grid-template-columns: repeat(2, 320px);
+        gap: 20px;
+        img{
+            height: 240px;
+            width: 320px;
+        }
+        .img-special{
+            height: 240px;
+            width: 660px;
+        }
+        
+    }
+}
+
+/* ===== Third Section ===== */
+.banner-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include j-padding(5rem, 20rem, 5rem, 20rem);
+
+    .one-text{
+        padding: 0 5%;
+        text-align: center;
+
+        p{
+            font-weight: bold;
+        }
+    }
+}
+
+/* ===== Fourth Section ===== */
+.fourthSection{
+    background-color: $firstColor;
+    color: $thirdColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include j-padding(5rem, 20rem, 5rem, 20rem);
+
+    > h2{
+        @extend %firstTitle;
+    }
+
+    > p{
+        @extend %secondTitle;
+    }
+}
+
+/* ==================== FOOTER ==================== */
+
+#footer{
+    background-color: $secondColor;
+    display: none
+    
+}
+
+.infoFooter{
+    @include j-padding(5rem, 20rem, 5rem, 20rem);
+}
+.copyright{
+    background-color: $firstColor;
+    color: $thirdColor;
+    @include j-padding(5rem, 20rem, 5rem, 20rem);
+}

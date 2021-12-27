@@ -1,0 +1,66 @@
+/* ========== BOOSTRAP ========== */
+
+p{
+    margin-bottom: 0;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+
+.dropdown-menu{
+    background-color: #212121;
+}
+
+.dropdown-item{
+    color: #fff;
+}
+.btn{
+    width: 148px;
+    height: 44px;
+}
+
+.btn-myGreen{
+    background-color: $secondColor;
+    border-radius: 150px;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    font-size: 1rem;
+    // @include j-media-up(lg){
+    //     margin-right: 1rem;
+    //     font-size: 1.2rem;
+    // }
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+}
+
+.navbar-dark .navbar-toggler{
+    border: 0;
+}
+
+.navbar-collapse {
+    padding-bottom: 0rem;
+}
+
+
+.card{
+    background-color: $pruebaColor;
+    color: #fff;
+}
+
+.card-footer{
+    background-color: #27272785;
+}
+
+.row{
+    --bs-gutter-x: 0rem;
+}

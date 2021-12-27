@@ -1,0 +1,21 @@
+// FIRST CARD ONE = FCO
+%fco-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+%firstTitle{
+    font-size: 2.9rem;
+    font-weight: bold;
+}
+
+%secondTitle{
+    font-weight: medium;
+    font-size: 1.15rem;
+}
+
+%avatarImg{
+    width: 528px;
+    height: 400px;
+}

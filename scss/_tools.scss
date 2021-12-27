@@ -1,0 +1,37 @@
+// VARIBLES TO COLOR
+$firstColor: #212121;
+$secondColor: #34FFC8;
+$thirdColor: #fff;
+$fourthColor: #2F2F2F;
+
+$pruebaColor: #373737;
+
+$grisColor: #ccc;
+$navbarCollapse: #212121d6;
+
+// PADDING 
+@mixin j-padding($top, $right, $bottom, $left){
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+// BREAK POINT TO MEDIA QUERY
+$break-points:(
+    sm: 540px,
+    md: 764px,
+    lg: 1024px,
+    xxl: 1500px
+);
+
+@mixin j-media-up($break-point){
+    @media (max-width: map-get($break-points, $break-point)) {
+        @content;
+    }
+}
+
+// BOX CONTAINER
+@mixin container-boxing{
+
+}
