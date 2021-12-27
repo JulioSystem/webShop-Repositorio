@@ -10,6 +10,12 @@ p{
 
 }
 
+.navbar > .container-fluid{
+    justify-content: center;
+    @include j-media-up(md){
+        justify-content: space-between;
+    }
+}
 
 .dropdown-menu{
     background-color: #212121;
@@ -63,4 +69,21 @@ p{
 
 .row{
     --bs-gutter-x: 0rem;
+}
+
+.form-control{
+    @include j-media-up(xxl){
+        width: auto;
+    }
+}
+
+.offset-1 {
+    @include j-media-up(xxl){
+        margin-left: 0;
+    }
+    
+}
+
+.row> * {
+    width: auto;
 }

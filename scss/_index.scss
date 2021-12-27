@@ -9,6 +9,15 @@
     color: #fff;
     @include j-padding(3rem, 20rem, 0, 20rem);
 
+
+    @include j-media-up(xl){
+        @include j-padding(5rem, 15rem, 5rem, 15rem);
+    }
+    
+    @include j-media-up(md){
+        @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);
+    }
+
     &::before{
         content: "";
         width: 100%;
@@ -17,14 +26,14 @@
         top: 0;
         left: 0;
     }
-
-    @include j-media-up(md){
-        @include j-padding(3rem, .5rem, 0, .5rem);
-    }
+    
 
 
 
 }
+
+/* ==================== NAVIGATION ==================== */
+
 
 /* ===== Principal Title ===== */
 .principalTitle{
@@ -33,10 +42,14 @@
     justify-content: center;
     align-items: center;
     height: 80vh;
+    @include j-padding(0, 1.5rem, 0, 1.5rem);
     .title__heading{
         font-weight: 700;
         text-align: center;
         width: 900px;
+        @include j-media-up(lg){
+            width: auto;
+        }
         @include j-media-up(md){
             width: auto;
         }
@@ -47,6 +60,8 @@
         width: 750px;
         text-align: center;
         color: $grisColor;
+        @include j-padding(0, .5rem, 0, .5rem);
+
         @include j-media-up(md){
             width: auto;
         }
@@ -60,13 +75,26 @@
 /* ==================== MAIN ==================== */
 
 #main{
-    display: none;
+    
 }
 
+/* ===== My img fluid===== */
 .helloImg{
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+
+
+    @include j-media-up(xl){
+        max-width: calc(100% - 20%);
+    }
+    @include j-media-up(lg){
+        max-width: calc(100% - 30%);
+    }
+    @include j-media-up(md){
+        max-width: calc(100% - 30%);
+    }
+
 
 }
 
@@ -74,6 +102,14 @@
 .firstSection{
     background-color: $grisColor;
     @include j-padding(5rem, 20rem, 5rem, 20rem);
+
+    @include j-media-up(xl){
+        @include j-padding(5rem, 15rem, 5rem, 15rem);
+    }
+
+    @include j-media-up(md){
+        @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);
+    }
 }
 
 .container__boxing{
@@ -81,6 +117,12 @@
     .boxing__reusable{
         @extend %fco-container;
         padding: 3% 0;
+
+        @include j-media-up(xxl){
+            flex-direction: column;
+            padding: 10% 4%;
+        }
+
         .boxing-text{
             > h2{
                 @extend %firstTitle;
@@ -88,24 +130,55 @@
             > p{
                 @extend %secondTitle;
             }
-            margin: 0 2%
+            margin: 0 2%;
+
+            @include j-media-up(xxl){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding-bottom: 10%;
+                
+            }
         }
         
+        
     }
+
+    .boxing-special{
+        @include j-media-up(xxl){
+            flex-direction: column-reverse;
+        }    
+    }
+
 }
 
+
 /* ===== Second Section ===== */
+
 .secondSection{
     background-color: $firstColor;
     color: $thirdColor;
     @include j-padding(5rem, 20rem, 5rem, 20rem);
-    
+
+    @include j-media-up(xl){
+        @include j-padding(5rem, 15rem, 5rem, 15rem);
+    }
+
+    @include j-media-up(md){
+        @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);
+    }
 }
+
 
 .misionTitle{
     display: flex;
     justify-content: center;
     align-items: center;
+    @include j-media-up(xxl){
+        flex-direction: column;
+    }
 
     .boxing-text{
         display: flex;
@@ -119,19 +192,51 @@
             @extend %secondTitle;
             width: 600px;
             padding-right: 20px;
+            @include j-media-up(xxl){
+                width: auto;
+                padding-right: 0;
+            }
+        }
+        @include j-media-up(xxl){
+            text-align: center;
+            padding-bottom: 5%;
         }
     }
+
+
     .boxing-img{
         display: grid;
         grid-template-columns: repeat(2, 320px);
         gap: 20px;
-        img{
-            height: 240px;
-            width: 320px;
+        .secondSection-img{
+            height: auto;
+            width: 100%;
+            @include j-media-up(xxl){
+                width: 70%;
+            }
         }
-        .img-special{
+        .secondSection-img-special{
             height: 240px;
             width: 660px;
+            @include j-media-up(xxl){
+                display: none;
+            }
+        }
+        .secondSection-img-special-xxl{
+            display: none;
+            height: auto;
+            width: 100%;
+            @include j-media-up(xxl){
+                display: block;
+                width: 70%;
+            }
+        }
+
+        @include j-media-up(xxl){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
     }
@@ -144,9 +249,27 @@
     align-items: center;
     @include j-padding(5rem, 20rem, 5rem, 20rem);
 
+    @include j-media-up(xxl){
+        flex-direction: column;
+        
+    }
+
+    @include j-media-up(xl){
+        @include j-padding(5rem, 15rem, 5rem, 15rem);
+    }
+
+    @include j-media-up(md){
+        @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);
+    }
+
     .one-text{
         padding: 0 5%;
         text-align: center;
+
+        @include j-media-up(xxl){
+            padding: 5% 0;
+            
+        }
 
         p{
             font-weight: bold;
@@ -164,6 +287,44 @@
     align-items: center;
     @include j-padding(5rem, 20rem, 5rem, 20rem);
 
+    @include j-media-up(xxl){
+        p{
+            text-align: center
+            
+        }
+    }
+
+    @include j-media-up(xl){
+        @include j-padding(5rem, 15rem, 5rem, 15rem);
+    }
+
+    @include j-media-up(md){
+        @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);
+    }
+
+    .card-container{
+        @include j-media-up(xxl){
+            flex-direction: column;
+            
+        }
+    }
+
+    .card-footer{
+        @include j-media-up(xxl){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer-card-one{
+            padding-left: 1rem;
+            align-items: flex-start;
+            @include j-media-up(xxl){
+            padding-left: 0;
+            align-items: center;
+            }
+        }
+    }
+
     > h2{
         @extend %firstTitle;
     }
@@ -177,15 +338,54 @@
 
 #footer{
     background-color: $secondColor;
-    display: none
     
 }
 
 .infoFooter{
     @include j-padding(5rem, 20rem, 5rem, 20rem);
+    flex-direction: column;
+    @include j-media-up(xxl){
+        flex-direction: column-reverse
+    }
+
+    @include j-media-up(xl){
+        @include j-padding(5rem, 15rem, 5rem, 15rem);
+    }
+
+    @include j-media-up(md){
+        @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);
+    }
+    .footerForm{
+        justify-content: center;
+        @include j-media-up(xxl){
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            box-sizing: border-box;
+            
+        }
+    
+        .nav-footer{
+            display: flex;
+            flex-direction: row;
+            @include j-media-up(xxl){
+                flex-direction: column;
+            }
+        }
+        
+    }
 }
 .copyright{
     background-color: $firstColor;
     color: $thirdColor;
     @include j-padding(5rem, 20rem, 5rem, 20rem);
+    @include j-media-up(xl){
+        @include j-padding(5rem, 15rem, 5rem, 15rem);
+    }
+
+    @include j-media-up(md){
+        @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);
+    }
 }
