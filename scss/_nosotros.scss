@@ -1,0 +1,17 @@
+
+/* ======================================== NOSOTROS======================================== */
+/* ======================================== NOSOTROS======================================== */
+/* ======================================== NOSOTROS======================================== */
+/* ==================== HEADER ==================== */
+#headerNosotros{
+    background-color: $firstColor;
+    height: 100vh;
+    
+    @include j-padding(3rem, 20rem, 0, 20rem);
+    @include j-media-up(xl){
+        @include j-padding(5rem, 15rem, 5rem, 15rem);
+    }
+    @include j-media-up(md){
+        @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);
+    }
+}

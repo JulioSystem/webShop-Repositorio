@@ -111,6 +111,9 @@ p {
   width: auto;
 }
 
+/* ======================================== INICIO======================================== */
+/* ======================================== INICIO======================================== */
+/* ======================================== INICIO======================================== */
 /* ==================== HEADER ==================== */
 #header {
   background-image: url("../assets/img/indexPrincipal.jpg");
@@ -605,6 +608,37 @@ p {
 
 @media (max-width: 764px) {
   .copyright {
+    padding-top: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+  }
+}
+
+/* ======================================== NOSOTROS======================================== */
+/* ======================================== NOSOTROS======================================== */
+/* ======================================== NOSOTROS======================================== */
+/* ==================== HEADER ==================== */
+#headerNosotros {
+  background-color: #212121;
+  height: 100vh;
+  padding-top: 3rem;
+  padding-right: 20rem;
+  padding-bottom: 0;
+  padding-left: 20rem;
+}
+
+@media (max-width: 1250px) {
+  #headerNosotros {
+    padding-top: 5rem;
+    padding-right: 15rem;
+    padding-bottom: 5rem;
+    padding-left: 15rem;
+  }
+}
+
+@media (max-width: 764px) {
+  #headerNosotros {
     padding-top: 3rem;
     padding-right: 1.5rem;
     padding-bottom: 3rem;
