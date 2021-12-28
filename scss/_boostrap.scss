@@ -7,7 +7,6 @@ p{
 .container-fluid {
     padding-right: 0;
     padding-left: 0;
-
 }
 
 .navbar > .container-fluid{
@@ -37,10 +36,6 @@ p{
 .navbar-brand {
     margin-right: 0;
     font-size: 1rem;
-    // @include j-media-up(lg){
-    //     margin-right: 1rem;
-    //     font-size: 1.2rem;
-    // }
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -56,7 +51,6 @@ p{
 .navbar-collapse {
     padding-bottom: 0rem;
 }
-
 
 .card{
     background-color: $pruebaColor;
