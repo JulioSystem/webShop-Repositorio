@@ -2,9 +2,10 @@
 $firstColor: #212121;
 $secondColor: #34FFC8;
 $thirdColor: #fff;
-$fourthColor: #2F2F2F;
-$pruebaColor: #373737;
 $grisColor: #ccc;
+
+//To boostrap
+$cardColor: #4c4c4c;
 $navbarCollapse: #212121d6;
 
 // PADDING 
@@ -30,4 +31,25 @@ $break-points:(
     }
 }
 
+//BORDER PAGINATION HEADER
+@mixin borderPaginationHeader{
+    @include j-padding(3rem, 20rem, 0, 20rem);
+    @include j-media-up(xl){
+        @include j-padding(5rem, 15rem, 5rem, 15rem);
+    }
+    @include j-media-up(md){
+        @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);
+    }
+}
+
+//BORDER PAGINATION
+@mixin borderPagination{
+    @include j-padding(5rem, 20rem, 5rem, 20rem);
+    @include j-media-up(xl){
+        @include j-padding(5rem, 15rem, 5rem, 15rem);
+    }
+    @include j-media-up(md){
+        @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);
+    }
+}
 

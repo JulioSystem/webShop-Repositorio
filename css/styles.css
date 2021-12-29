@@ -83,7 +83,7 @@ p {
 }
 
 .card {
-  background-color: #373737;
+  background-color: #4c4c4c;
   color: #fff;
 }
 
@@ -422,12 +422,6 @@ p {
   padding-left: 20rem;
 }
 
-@media (max-width: 1500px) {
-  .banner-one {
-    flex-direction: column;
-  }
-}
-
 @media (max-width: 1250px) {
   .banner-one {
     padding-top: 5rem;
@@ -443,6 +437,12 @@ p {
     padding-right: 1.5rem;
     padding-bottom: 3rem;
     padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .banner-one {
+    flex-direction: column;
   }
 }
 
@@ -475,12 +475,6 @@ p {
   padding-left: 20rem;
 }
 
-@media (max-width: 1500px) {
-  .fourthSection p {
-    text-align: center;
-  }
-}
-
 @media (max-width: 1250px) {
   .fourthSection {
     padding-top: 5rem;
@@ -496,6 +490,12 @@ p {
     padding-right: 1.5rem;
     padding-bottom: 3rem;
     padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .fourthSection p {
+    text-align: center;
   }
 }
 
@@ -538,12 +538,6 @@ p {
   flex-direction: column;
 }
 
-@media (max-width: 1500px) {
-  .infoFooter {
-    flex-direction: column-reverse;
-  }
-}
-
 @media (max-width: 1250px) {
   .infoFooter {
     padding-top: 5rem;
@@ -559,6 +553,12 @@ p {
     padding-right: 1.5rem;
     padding-bottom: 3rem;
     padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .infoFooter {
+    flex-direction: column-reverse;
   }
 }
 
@@ -619,7 +619,7 @@ p {
 /* ======================================== NOSOTROS======================================== */
 /* ======================================== NOSOTROS======================================== */
 /* ==================== HEADER ==================== */
-#headerNosotros {
+#headerSecondary {
   background-color: #212121;
   height: 100vh;
   padding-top: 3rem;
@@ -629,7 +629,7 @@ p {
 }
 
 @media (max-width: 1250px) {
-  #headerNosotros {
+  #headerSecondary {
     padding-top: 5rem;
     padding-right: 15rem;
     padding-bottom: 5rem;
@@ -638,7 +638,7 @@ p {
 }
 
 @media (max-width: 764px) {
-  #headerNosotros {
+  #headerSecondary {
     padding-top: 3rem;
     padding-right: 1.5rem;
     padding-bottom: 3rem;

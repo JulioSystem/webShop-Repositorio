@@ -23,6 +23,7 @@ p{
 .dropdown-item{
     color: #fff;
 }
+
 .btn{
     width: 148px;
     height: 44px;
@@ -53,7 +54,7 @@ p{
 }
 
 .card{
-    background-color: $pruebaColor;
+    background-color: $cardColor;
     color: #fff;
 }
 
@@ -75,7 +76,6 @@ p{
     @include j-media-up(xxl){
         margin-left: 0;
     }
-    
 }
 
 .row> * {
