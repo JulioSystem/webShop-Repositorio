@@ -81,3 +81,15 @@ p{
 .row> * {
     width: auto;
 }
+
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(42, 211, 166, 0.527);
+}
+
+.modal-content {
+    background-color: #e5dddd;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(42, 211, 166, 0.527);
+}
