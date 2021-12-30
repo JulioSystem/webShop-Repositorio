@@ -6,14 +6,49 @@
 #headerSecondary{
     background-color: $firstColor;
     height: 100vh;
+    @include borderPaginationHeader;
+}
+
+.nosotrosTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    text-align: center;
+
     
-    @include j-padding(3rem, 20rem, 0, 20rem);
-    @include j-media-up(xl){
-        @include j-padding(5rem, 15rem, 5rem, 15rem);
+    .textContainer{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding-top: 5%;
+        @include j-media-up(xl){
+            
+            grid-template-columns: repeat(1, auto);
+            padding: 50px
+        }
+        @include j-media-up(lg){
+            grid-template-columns: repeat(1, auto);
+            padding: 50px
+        }
+        .textReusable{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            &.hiddenBox{
+                display: show;
+                @include j-media-up(xl){
+                    display: none;
+                }
+            }
+        }
     }
-    @include j-media-up(md){
-        @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);
-    }
+
 }
 
 
@@ -21,60 +56,18 @@
 /* ==================== MAIN ==================== */
 
 /* ===== First section ===== */
-.containerGroup{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    .reusable-group{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        @include j-padding(4rem, 2rem, 0, 2rem);
-        img{
-            height: 150px;
-            width: 150px;
-        }
-        p{
-            font-weight: bold;
-            font-size: 1.3rem;
-        }
-        .group-icon{
-            font-size: 1.1rem;
-            a{
-                color: $firstColor;
-                font-size: 3rem;
-                transition: .5s;
-                &:hover{
-                    color: $secondColor;
-                }
-                i{
-                    font-size: 3rem;
-                }
-            }
-
-        }
-
-    }
-}
-
-
-
-.pruebaof1{
+.staffCards{
     background-color: #F1FAFF;
-    padding: 20% 0;
+    @include borderPagination;
 }
 
 .container__cards{
     max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    .card-uff{
+    .cards__reusable{
         width: 300px;
         margin: 10px;
         transition: all 300ms;
@@ -83,17 +76,15 @@
             .img__back{
                 bottom: -40px;
             }
-            .description{
+            .cards__description{
                 padding: 40px;
             }
-            
         }
-        .cover{
+        .cards__cover{
             width: 100%;
             height: 250px;
             position: relative;
             overflow: hidden;
-
             img{
                 width: 250px;
                 display: block;
@@ -103,7 +94,6 @@
                 z-index: 1;
                 filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
                 transition: all 400ms;
-                
             }
             .img__back{
                 width: 100%;
@@ -116,9 +106,7 @@
                 transition: all 300ms;
             }
         }
-
-
-        .description{
+        .cards__description{
             background: white;
             margin-top: -10px;
             padding: 20px;
@@ -130,8 +118,6 @@
             p{
                 margin-top: 10px;
             }
-            
-        
             .info-container{
                 display: flex;
                 align-items: center;
@@ -162,28 +148,63 @@
                         font-size: 1.5rem;
                     }
                 }
-        
-        
             }
         }
     }
-
-
 }
 
-.card-uff:hover .cover img{
+.cards__reusable:hover .cards__cover img{
     top: 0px;
     filter: none;
 }
 
-.card-uff:nth-of-type(1) .img__back{
-    background-image: url(../assets/img/cards/bg1.jpg);
+.cards__reusable:nth-of-type(1){
+    .img__back{
+        background-image: url(../assets/img/cards/bg1.jpg);
+    }
 }
 
-.card-uff:nth-of-type(2) .img__back{
-    background-image: url(../assets/img/cards/bg1.jpg);
+.cards__reusable:nth-of-type(2){
+    .img__back{
+        background-image: url(../assets/img/cards/bg2.jpg);
+    }
 }
 
-.card-uff:nth-of-type(3) .img__back{
-    background-image: url(../assets/img/cards/bg1.jpg);
+.cards__reusable:nth-of-type(3){
+    .img__back{
+        background-image: url(../assets/img/cards/bg3.jpg);
+    }    
 }
+
+/* ===== Second section ===== */
+
+.recentlyWorks{
+    @include borderPagination;
+    .worksContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px 140px;
+        justify-items: center;
+        justify-content: center;
+        gap: 35px;
+        @include j-media-up(xl){
+            grid-template-columns: repeat(1, auto);
+            padding: 100px
+        }
+        @include j-media-up(lg){
+            grid-template-columns: repeat(1, auto);
+            padding: 50px
+        }
+
+        .reusableWorks{
+            text-align: center;
+            width: 320px;
+            height: auto;
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}
+

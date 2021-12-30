@@ -43,25 +43,53 @@
                     </div>
                 </div>
             </nav>
-            <div class="text-light">
-                <h3>Sobre nosotros</h3>
+            <div class="nosotrosTitle text-light">
+                <h2 class="display-5 fw-bold">Sobre nosotros</h2>
+                <div class="textContainer">
+                    <div class="textReusable">
+                        <p class="h3">Conoce a nuestro staff</p>
+                        <p class="text-muted pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime soluta eum quo quae harum, nihil dolores omnis sint dolorum vitae nisi mollitia natus unde quaerat culpa? Fugiat assumenda praesentium quis?</p>
+                        <a class="btn btn-myGreen fw-bold d-flex justify-content-center align-items-center" href="#" role="button">Ver más</a>
+                    </div>
+                    <div class="textReusable hiddenBox">
+                        <p class="h3">Nuestros trabajos recientes</p>
+                        <p class="text-muted pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime soluta eum quo quae harum, nihil dolores omnis sint dolorum vitae nisi mollitia natus unde quaerat culpa? Fugiat assumenda praesentium quis?</p>
+                        <a class="btn btn-myGreen fw-bold d-flex justify-content-center align-items-center" href="#" role="button">Ver más</a>
+                    </div>
+                    <div class="textReusable hiddenBox">
+                        <p class="h3">Visión y Misión</p>
+                        <p class="text-muted pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime soluta eum quo quae harum, nihil dolores omnis sint dolorum vitae nisi mollitia natus unde quaerat culpa? Fugiat assumenda praesentium quis?</p>
+                        <a class="btn btn-myGreen fw-bold d-flex justify-content-center align-items-center" href="#" role="button">Ver más</a>
+                    </div>
+                    <div class="textReusable hiddenBox">
+                        <p class="h3">Proveedores</p>
+                        <p class="text-muted pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime soluta eum quo quae harum, nihil dolores omnis sint dolorum vitae nisi mollitia natus unde quaerat culpa? Fugiat assumenda praesentium quis?</p>
+                        <a class="btn btn-myGreen fw-bold d-flex justify-content-center align-items-center" href="#" role="button">Ver más</a>
+                    </div>
+                </div>
             </div>
+
         </header>
         <!-- ========== MAIN ========== -->
-        <main>
-            <div class="pruebaof1">
-                <p class="h2 fw-bold text-center">Nuestro staff</p>
+        <main id="main">
+            <!-- ==== First section - Staff cards ==== -->
+            <div class="staffCards">
+                <p class="h1 fw-bold text-center">Nuestro staff</p>
                 <div class="container__cards">
-                    <div class="card-uff">
-                        <div class="cover">
+                    <!-- Item 1 -->
+                    <div class="cards__reusable">
+                        <div class="cards__cover">
                             <img src="../assets/img/cards/p1.png" alt="">
                             <div class="img__back"></div>
                         </div>
-                        <div class="description">
+                        <div class="cards__description">
                             <h2>Carolina Herrera</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
                             <div class="info-container">
-                                <input type="button" value="Leer Más">
+                                <button type="button" class="btn btn-myGreen fw-bold">
+                                    Leer más
+                                </button>
+                                <!-- <input type="button" value="Leer Más"> -->
                                 <div class="icon">
                                     <a href="#"><i class="uil uil-linkedin-alt"></i></a>
                                     <a href="#"><i class="uil uil-github-alt"></i></a>
@@ -69,17 +97,20 @@
                             </div>
                         </div>
                     </div>
-            
-                    <div class="card-uff">
-                        <div class="cover">
-                            <img src="../assets/img/cards/p1.png" alt="">
+                    <!-- Item 2 -->
+                    <div class="cards__reusable">
+                        <div class="cards__cover">
+                            <img src="../assets/img/cards/p2.png" alt="">
                             <div class="img__back"></div>
                         </div>
-                        <div class="description">
+                        <div class="cards__description">
                             <h2>Elon Musk</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
                             <div class="info-container">
-                                <input type="button" value="Leer Más">
+                                <button type="button" class="btn btn-myGreen fw-bold">
+                                    Leer más
+                                </button>
+                                <!-- <input type="button" value="Leer Más"> -->
                                 <div class="icon">
                                     <a href="#"><i class="uil uil-linkedin-alt"></i></a>
                                     <a href="#"><i class="uil uil-github-alt"></i></a>
@@ -87,18 +118,20 @@
                             </div>
                         </div>
                     </div>
-            
-                    <div class="card-uff">
-                        <div class="cover">
-                            <img src="../assets/img/cards/p1.png" alt="">
+                    <!-- Item 3 -->
+                    <div class="cards__reusable">
+                        <div class="cards__cover">
+                            <img src="../assets/img/cards/p3.png" alt="">
                             <div class="img__back"></div>
                         </div>
-                        <div class="description">
-                            <h2>Aya Nakamura</h2>
+                        <div class="cards__description">
+                            <h2>Taylor Styles</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
-                            
                             <div class="info-container">
-                                <input type="button" value="Leer Más">
+                                <button type="button" class="btn btn-myGreen fw-bold">
+                                    Leer más
+                                </button>
+                                <!-- <input type="button" value="Leer Más"> -->
                                 <div class="icon">
                                     <a href="#"><i class="uil uil-linkedin-alt"></i></a>
                                     <a href="#"><i class="uil uil-github-alt"></i></a>
@@ -106,9 +139,58 @@
                             </div>
                         </div>
                     </div>
-            
                 </div>
             </div>
+            <!-- ==== Second section - ==== -->
+            <div class="recentlyWorks">
+                <p class="h1 fw-bold text-center">Trabajos recientes</p>
+                <div class="worksContainer">
+                    <div class="reusableWorks">
+                        <img src="../assets/img/popular/popular1.jpg" alt="">
+                        <p class="h6 fw-bold">Category name | Date</p>
+                        <p class="h3 fw-bold">Interesting title</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore consequatur nihil magnam ipsa sunt fugit itaque repellat</p>
+                    </div>
+                    <div class="reusableWorks">
+                        <img src="../assets/img/popular/popular1.jpg" alt="">
+                        <p class="h6 fw-bold">Category name | Date</p>
+                        <p class="h3 fw-bold">Interesting title</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore consequatur nihil magnam ipsa sunt fugit itaque repellat</p>
+                    </div>
+                    <div class="reusableWorks">
+                        <img src="../assets/img/popular/popular1.jpg" alt="">
+                        <p class="h6 fw-bold">Category name | Date</p>
+                        <p class="h3 fw-bold">Interesting title</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore consequatur nihil magnam ipsa sunt fugit itaque repellat</p>
+                    </div>
+                    <div class="reusableWorks">
+                        <img src="../assets/img/popular/popular1.jpg" alt="">
+                        <p class="h6 fw-bold">Category name | Date</p>
+                        <p class="h3 fw-bold">Interesting title</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore consequatur nihil magnam ipsa sunt fugit itaque repellat</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ==== Third section - ==== -->
+            <div>
+
+            </div>
+            <!-- ==== Fourth section - ==== -->
+            <div>
+
+            </div>
+            <!-- ==== Fifth section - ==== -->
+            <div>
+
+            </div>
+
+
+
+
+
+
+
         </main>
 
         
