@@ -56,7 +56,34 @@
 /* ===== Scroll down ===== */
 .scrolldown{
     color: $grisColor;
+    .beat{
+        display: inline-flex;
+        // animation-name: put;
+        // animation-duration: 1.2s;
+        // animation-iteration-count: infinite;
+    }
 }
+
+// @keyframes put {
+//     0% {
+//         transform: scaleX(0.9);
+//     }
+//     5% {
+//         transform: scaleY(1);
+//     }
+//     10% {
+//         transform: scale(0.9);
+//     }
+//     15% {
+//         transform: scale(1.1);
+//     }
+//     50% {
+//         transform: scale(0.9);
+//     }
+//     100% {
+//         transform: scale(0.9);
+//     }
+// }
 
 /* ==================== MAIN ==================== */
 /* ===== My img fluid ===== */

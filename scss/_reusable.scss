@@ -18,3 +18,64 @@
     width: 528px;
     height: 400px;
 }
+
+
+
+// BUTTON REUSABLE
+
+.button{
+    position: relative;
+    text-decoration: none;
+    width: 148px;
+    height: 44px;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    // position: absolute;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: #34FFC8;
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:active {
+        transform: translateY(-10px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+        background-color: #34FFC8;
+    }
+    &.button-animated{
+        animation: moveInBottom 5s ease-out;
+        animation-fill-mode: backwards;
+        color: #000;
+    }
+}
+
+// @keyframes moveInBottom{
+//     0%{
+//         opacity: 0;
+//         transform: translateY(30px);
+//     }
+//     100%{
+//         opacity: 1;
+//         transform: translateY(0px);
+//     }
+// }
