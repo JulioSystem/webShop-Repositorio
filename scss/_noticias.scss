@@ -1,0 +1,72 @@
+/* ======================================== NOTICIAS ======================================== */
+/* ======================================== NOTICIAS ======================================== */
+/* ======================================== NOTICIAS ======================================== */
+/* ==================== HEADER ==================== */
+.servicesTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    justify-content: center;
+}
+
+.noticeSection{
+    .containerArticle{
+        text-align: justify;
+        @include borderPagination;
+        &.firstArticle{
+            @include borderArticle;
+        }
+        &.secondArticle{
+            background-color: $firstColor;
+            color: $thirdColor;
+            @include borderArticle;
+        }
+        &.thirdArticle{
+            @include borderArticle;
+        }
+        .containerFeed{
+            .icon-top{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 1.5rem;
+                padding-bottom: 3%;
+                a{  
+                    color: $firstColor;
+                    transition: .5s;
+                    text-decoration: none;
+                    display: inline-flex;
+                    &:hover{
+                        color: $secondColor;
+                    }
+                }
+                &.icon-top-light{
+                    a{
+                        color: $thirdColor;
+                        transition: .5s;
+                        text-decoration: none;
+                        display: inline-flex;
+                        &:hover{
+                            color: $secondColor;
+                        }
+                    }
+                }
+            }
+            .whrite-down{
+                .buttonToArticle{
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    padding-top: 0.5rem;
+                }
+            }
+
+
+
+
+        }
+    }
+}

@@ -56,3 +56,17 @@ $break-points:(
     }
 }
 
+//ARTICLE
+
+@mixin borderArticle{
+    padding: 5% 30%;
+        @include j-media-up(xxl){
+            padding: 6% 20%;
+        }
+        @include j-media-up(xl){
+            padding: 5rem 15%;
+        }
+        @include j-media-up(lg){
+            padding: 3rem 1.5rem ;
+        }
+}

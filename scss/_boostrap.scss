@@ -73,9 +73,9 @@ p{
 }
 
 .form-control{
-    @include j-media-up(xxl){
-        width: auto;
-    }
+    // @include j-media-up(xxl){
+    //     width: auto;
+    // }
 }
 
 .offset-1 {

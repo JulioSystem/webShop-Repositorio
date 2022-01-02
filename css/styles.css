@@ -157,12 +157,6 @@ p {
 }
 
 @media (max-width: 1500px) {
-  .form-control {
-    width: auto;
-  }
-}
-
-@media (max-width: 1500px) {
   .offset-1 {
     margin-left: 0;
   }
@@ -1118,12 +1112,104 @@ p {
   padding: 5% 30%;
 }
 
+@media (max-width: 1500px) {
+  .noticeSection .containerArticle.firstArticle {
+    padding: 6% 20%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .noticeSection .containerArticle.firstArticle {
+    padding: 5rem 15%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .noticeSection .containerArticle.firstArticle {
+    padding: 3rem 1.5rem;
+  }
+}
+
 .noticeSection .containerArticle.secondArticle {
   background-color: #212121;
   color: #fff;
   padding: 5% 30%;
 }
 
+@media (max-width: 1500px) {
+  .noticeSection .containerArticle.secondArticle {
+    padding: 6% 20%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .noticeSection .containerArticle.secondArticle {
+    padding: 5rem 15%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .noticeSection .containerArticle.secondArticle {
+    padding: 3rem 1.5rem;
+  }
+}
+
 .noticeSection .containerArticle.thirdArticle {
   padding: 5% 30%;
+}
+
+@media (max-width: 1500px) {
+  .noticeSection .containerArticle.thirdArticle {
+    padding: 6% 20%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .noticeSection .containerArticle.thirdArticle {
+    padding: 5rem 15%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .noticeSection .containerArticle.thirdArticle {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.noticeSection .containerArticle .containerFeed .icon-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding-bottom: 3%;
+}
+
+.noticeSection .containerArticle .containerFeed .icon-top a {
+  color: #212121;
+  transition: .5s;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.noticeSection .containerArticle .containerFeed .icon-top a:hover {
+  color: #34FFC8;
+}
+
+.noticeSection .containerArticle .containerFeed .icon-top.icon-top-light a {
+  color: #fff;
+  transition: .5s;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.noticeSection .containerArticle .containerFeed .icon-top.icon-top-light a:hover {
+  color: #34FFC8;
+}
+
+.noticeSection .containerArticle .containerFeed .whrite-down .buttonToArticle {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 0.5rem;
 }
