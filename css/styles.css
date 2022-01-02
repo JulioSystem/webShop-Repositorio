@@ -173,7 +173,7 @@ p {
 }
 
 .btn-check:focus + .btn, .btn:focus {
-  box-shadow: 0 0 0 0.25rem rgba(42, 211, 166, 0.527);
+  box-shadow: 0 0 0 0.25rem rgba(201, 196, 196, 0.527);
 }
 
 .modal-content {
@@ -181,12 +181,12 @@ p {
 }
 
 .form-control:focus {
-  box-shadow: 0 0 0 0.25rem rgba(42, 211, 166, 0.527);
+  box-shadow: 0 0 0 0.25rem rgba(201, 196, 196, 0.527);
 }
 
-/* ======================================== INICIO======================================== */
-/* ======================================== INICIO======================================== */
-/* ======================================== INICIO======================================== */
+/* ======================================== INICIO ======================================== */
+/* ======================================== INICIO ======================================== */
+/* ======================================== INICIO ======================================== */
 /* ==================== HEADER ==================== */
 #header {
   background-image: url("../assets/img/indexPrincipal.jpg");
@@ -692,9 +692,9 @@ p {
   }
 }
 
-/* ======================================== NOSOTROS======================================== */
-/* ======================================== NOSOTROS======================================== */
-/* ======================================== NOSOTROS======================================== */
+/* ======================================== NOSOTROS ======================================== */
+/* ======================================== NOSOTROS ======================================== */
+/* ======================================== NOSOTROS ======================================== */
 /* ==================== HEADER ==================== */
 #headerSecondary {
   background-color: #212121;
@@ -1073,4 +1073,57 @@ p {
   .proveedoresNope .nothingBox {
     text-align: center;
   }
+}
+
+/* ======================================== SERVICIOS ======================================== */
+/* ======================================== SERVICIOS ======================================== */
+/* ======================================== SERVICIOS ======================================== */
+/* ==================== HEADER ==================== */
+.servicesTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  justify-content: center;
+}
+
+.noticeSection .containerArticle {
+  text-align: justify;
+  padding-top: 5rem;
+  padding-right: 20rem;
+  padding-bottom: 5rem;
+  padding-left: 20rem;
+}
+
+@media (max-width: 1250px) {
+  .noticeSection .containerArticle {
+    padding-top: 5rem;
+    padding-right: 15rem;
+    padding-bottom: 5rem;
+    padding-left: 15rem;
+  }
+}
+
+@media (max-width: 764px) {
+  .noticeSection .containerArticle {
+    padding-top: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.noticeSection .containerArticle.firstArticle {
+  padding: 5% 30%;
+}
+
+.noticeSection .containerArticle.secondArticle {
+  background-color: #212121;
+  color: #fff;
+  padding: 5% 30%;
+}
+
+.noticeSection .containerArticle.thirdArticle {
+  padding: 5% 30%;
 }
