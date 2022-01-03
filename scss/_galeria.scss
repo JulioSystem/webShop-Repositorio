@@ -1,0 +1,106 @@
+/* ======================================== GALLERY ======================================== */
+/* ======================================== GALLERY ======================================== */
+/* ======================================== GALLERY ======================================== */
+/* ==================== MAIN ==================== */
+.gallery-container{
+    @include borderPagination;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 10px;
+
+    .gallery__item{
+        position: relative;
+        
+        .gallery__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            
+        }
+        .text__overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(253, 253, 253, 0.685);
+            color: $firstColor;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity .25s;
+            
+            &:hover{
+                opacity: 1;
+                & > *{
+                transform: translateY(0px);
+                }
+            }
+            & > *{
+                transform: translateY(20px);
+                transition: transform 0.25s;
+            }
+        }
+    }
+}
+
+
+.gallery__item:nth-child(1){
+    @include j-media-up(xxl){
+        grid-column-start: span 3;
+    }
+}
+
+.gallery__item:nth-child(2){
+    @include j-media-up(xxl){
+        grid-column-start: span 3;
+    }
+}
+
+.gallery__item:nth-child(3){
+    @include j-media-up(xxl){
+        grid-column-start: span 3;
+    }
+}
+
+.gallery__item:nth-child(4){
+    grid-column-start: span 2;
+    @include j-media-up(xxl){
+        grid-column-start: span 3;
+    }
+}
+
+.gallery__item:nth-child(5){
+    grid-row-start: span 2;
+    @include j-media-up(xxl){
+        grid-row-start: span 1;
+        grid-column-start: span 3;
+    }
+}
+
+.gallery__item:nth-child(6){
+    @include j-media-up(xxl){
+        grid-column-start: span 3;
+    }
+}
+
+.gallery__item:nth-child(7){
+    @include j-media-up(xxl){
+        grid-column-start: span 3;
+    }
+}
+
+.gallery__item:nth-child(8){
+    grid-column-start: span 3;
+    @include j-media-up(x){
+        grid-column-start: span 3;
+    }
+}
+
+
