@@ -1,5 +1,4 @@
 /* ========== BOOSTRAP ========== */
-
 p{
     margin-bottom: 0;
 }
@@ -44,7 +43,6 @@ p{
     }
 }
 
-
 .navbar-brand {
     margin-right: 0;
     font-size: 1rem;
@@ -75,12 +73,6 @@ p{
 
 .row{
     --bs-gutter-x: 0rem;
-}
-
-.form-control{
-    // @include j-media-up(xxl){
-    //     width: auto;
-    // }
 }
 
 .offset-1 {

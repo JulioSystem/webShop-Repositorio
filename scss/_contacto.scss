@@ -1,7 +1,10 @@
+/* ======================================== CONTACT ======================================== */
+/* ======================================== CONTACT ======================================== */
+/* ======================================== CONTACT ======================================== */
+/* ==================== HEADER ==================== */
 .generalContainer{
     @include borderPagination;
 }
-
 
 .containerContact{
     background-color: #fff;
@@ -10,14 +13,11 @@
     align-items: center;
     border-radius: 50px;
     height: 70vh;
-
     @include j-media-up(xxl){
         height: 80vh;
         justify-content: center;
         flex-direction: column;
     }    
-
-
     .img__container{
         
         padding-top: 20px;

@@ -31,6 +31,7 @@ img {
   font-size: 1.15rem;
 }
 
+/* BUTTON REUSABLE */
 .button {
   position: relative;
   text-decoration: none;
@@ -281,10 +282,6 @@ p {
 /* ===== Scroll down ===== */
 .scrolldown {
   color: #ccc;
-}
-
-.scrolldown .beat {
-  display: inline-flex;
 }
 
 /* ==================== MAIN ==================== */
@@ -1355,6 +1352,10 @@ p {
   padding-top: 0.5rem;
 }
 
+/* ======================================== CONTACT ======================================== */
+/* ======================================== CONTACT ======================================== */
+/* ======================================== CONTACT ======================================== */
+/* ==================== HEADER ==================== */
 .generalContainer {
   padding-top: 5rem;
   padding-right: 20rem;

@@ -56,34 +56,7 @@
 /* ===== Scroll down ===== */
 .scrolldown{
     color: $grisColor;
-    .beat{
-        display: inline-flex;
-        // animation-name: put;
-        // animation-duration: 1.2s;
-        // animation-iteration-count: infinite;
-    }
 }
-
-// @keyframes put {
-//     0% {
-//         transform: scaleX(0.9);
-//     }
-//     5% {
-//         transform: scaleY(1);
-//     }
-//     10% {
-//         transform: scale(0.9);
-//     }
-//     15% {
-//         transform: scale(1.1);
-//     }
-//     50% {
-//         transform: scale(0.9);
-//     }
-//     100% {
-//         transform: scale(0.9);
-//     }
-// }
 
 /* ==================== MAIN ==================== */
 /* ===== My img fluid ===== */
@@ -178,7 +151,6 @@
             padding-bottom: 5%;
         }
     }
-
     .boxing-img{
         display: grid;
         grid-template-columns: repeat(2, 320px);
@@ -247,8 +219,7 @@
     @include borderPagination;
     @include j-media-up(xxl){
         p{
-            text-align: center
-            
+            text-align: center;
         }
     }
     .card-container{

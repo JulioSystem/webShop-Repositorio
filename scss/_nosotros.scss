@@ -16,8 +16,6 @@
     align-items: center;
     height: 85vh;
     text-align: center;
-
-    
     .textContainer{
         display: grid;
         justify-content: center;
@@ -26,7 +24,6 @@
         gap: 50px;
         padding-top: 5%;
         @include j-media-up(xl){
-            
             grid-template-columns: repeat(1, auto);
             padding: 50px
         }
@@ -48,13 +45,9 @@
             }
         }
     }
-
 }
 
-
-
 /* ==================== MAIN ==================== */
-
 /* ===== First section ===== */
 .staffCards{
     background-color: #F1FAFF;
@@ -177,7 +170,6 @@
 }
 
 /* ===== Second section ===== */
-
 .recentlyWorks{
     @include borderPagination;
     .worksContainer{
@@ -195,7 +187,6 @@
             grid-template-columns: repeat(1, auto);
             padding: 50px
         }
-
         .reusableWorks{
             text-align: center;
             width: 320px;
@@ -213,7 +204,6 @@
     @include borderPagination;
     background-color: $firstColor;
     color: $thirdColor;
-
     .togetherContainer{
         padding: 50px 0;
         .reusableTogether{

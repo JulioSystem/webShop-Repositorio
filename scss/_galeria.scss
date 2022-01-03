@@ -8,16 +8,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
     gap: 10px;
-
     .gallery__item{
         position: relative;
-        
         .gallery__img{
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
-            
         }
         .text__overlay{
             position: absolute;
@@ -35,7 +32,6 @@
             text-align: center;
             opacity: 0;
             transition: opacity .25s;
-            
             &:hover{
                 opacity: 1;
                 & > *{
@@ -49,7 +45,6 @@
         }
     }
 }
-
 
 .gallery__item:nth-child(1){
     @include j-media-up(xxl){
