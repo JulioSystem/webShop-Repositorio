@@ -120,8 +120,13 @@ p {
 }
 
 .btn-darking {
-  background-color: #696666;
+  background-color: #202020;
   border-radius: 150px;
+  color: #fff;
+}
+
+.btn-darking:hover {
+  color: #fff;
 }
 
 .navbar-brand {
@@ -692,7 +697,7 @@ p {
 /* ==================== HEADER ==================== */
 #headerSecondary {
   background-color: #212121;
-  height: 100vh;
+  height: 105vh;
   padding-top: 3rem;
   padding-right: 20rem;
   padding-bottom: 0;
@@ -1348,4 +1353,60 @@ p {
   justify-content: end;
   align-items: center;
   padding-top: 0.5rem;
+}
+
+.generalContainer {
+  padding-top: 5rem;
+  padding-right: 20rem;
+  padding-bottom: 5rem;
+  padding-left: 20rem;
+}
+
+@media (max-width: 1250px) {
+  .generalContainer {
+    padding-top: 5rem;
+    padding-right: 15rem;
+    padding-bottom: 5rem;
+    padding-left: 15rem;
+  }
+}
+
+@media (max-width: 764px) {
+  .generalContainer {
+    padding-top: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.containerContact {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 50px;
+  height: 70vh;
+}
+
+@media (max-width: 1500px) {
+  .containerContact {
+    height: 80vh;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.containerContact .img__container {
+  padding-top: 20px;
+}
+
+.containerContact .img__container img {
+  width: 450px;
+}
+
+@media (max-width: 1500px) {
+  .containerContact .img__container img {
+    width: 200px;
+  }
 }
