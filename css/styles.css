@@ -93,7 +93,7 @@ p {
 }
 
 .navbar > .container-fluid {
-  justify-content: center;
+  justify-content: space-around;
 }
 
 @media (max-width: 764px) {
@@ -204,10 +204,10 @@ p {
 
 @media (max-width: 1250px) {
   #header {
-    padding-top: 5rem;
-    padding-right: 15rem;
-    padding-bottom: 5rem;
-    padding-left: 15rem;
+    padding-top: 3rem;
+    padding-right: 11rem;
+    padding-bottom: 3rem;
+    padding-left: 11rem;
   }
 }
 
@@ -220,15 +220,6 @@ p {
   }
 }
 
-#header::before {
-  content: "";
-  width: 100%;
-  min-height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 /* ==================== NAVIGATION ==================== */
 /* ===== Principal Title ===== */
 .principalTitle {
@@ -236,7 +227,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 75vh;
   padding-top: 0;
   padding-right: 1.5rem;
   padding-bottom: 0;
@@ -251,7 +242,7 @@ p {
 
 @media (max-width: 1024px) {
   .principalTitle .title__heading {
-    width: auto;
+    width: 600px;
   }
 }
 
@@ -703,10 +694,10 @@ p {
 
 @media (max-width: 1250px) {
   #headerSecondary {
-    padding-top: 5rem;
-    padding-right: 15rem;
-    padding-bottom: 5rem;
-    padding-left: 15rem;
+    padding-top: 3rem;
+    padding-right: 11rem;
+    padding-bottom: 3rem;
+    padding-left: 11rem;
   }
 }
 

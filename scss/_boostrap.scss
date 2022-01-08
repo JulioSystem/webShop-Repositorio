@@ -9,7 +9,7 @@ p{
 }
 
 .navbar > .container-fluid{
-    justify-content: center;
+    justify-content: space-around;
     @include j-media-up(md){
         justify-content: space-between;
     }

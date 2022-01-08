@@ -38,7 +38,7 @@ $break-points:(
 @mixin borderPaginationHeader{
     @include j-padding(3rem, 20rem, 0, 20rem);
     @include j-media-up(xl){
-        @include j-padding(5rem, 15rem, 5rem, 15rem);
+        @include j-padding(3rem, 11rem, 3rem, 11rem); //5rem a 3rem y 15rem a 11rem
     }
     @include j-media-up(md){
         @include j-padding(3rem, 1.5rem, 3rem, 1.5rem);

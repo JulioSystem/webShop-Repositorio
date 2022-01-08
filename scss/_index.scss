@@ -11,14 +11,6 @@
     background-attachment: fixed;
     color: #fff;
     @include borderPaginationHeader;
-    &::before{
-        content: "";
-        width: 100%;
-        min-height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
 }
 
 /* ==================== NAVIGATION ==================== */
@@ -28,14 +20,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 75vh; //De 80vh a 75vh
     @include j-padding(0, 1.5rem, 0, 1.5rem);
     .title__heading{
         font-weight: 700;
         text-align: center;
         width: 900px;
         @include j-media-up(lg){
-            width: auto;
+            width: 600px;
         }
         @include j-media-up(md){
             width: auto;
