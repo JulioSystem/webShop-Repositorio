@@ -48,7 +48,29 @@
 /* ===== Scroll down ===== */
 .scrolldown{
     color: $grisColor;
+    .down-and-up{
+        animation-name: dau;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+        .con-container{
+            display: flex;
+            color: $grisColor;
+            text-decoration: none;
+            &:hover{
+                color: $secondColor;
+            }
+        }
+        @keyframes dau {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-1.8rem); }
+            60% { transform: translateY(-1.2rem); }
+        }
+        &:hover{
+            animation: none;
+        }
+    }
 }
+
 
 /* ==================== MAIN ==================== */
 /* ===== My img fluid ===== */

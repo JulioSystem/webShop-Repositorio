@@ -93,7 +93,7 @@ p {
 }
 
 .navbar > .container-fluid {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 @media (max-width: 764px) {
@@ -135,18 +135,18 @@ p {
   font-size: 1rem;
 }
 
-.dropdown-item.active, .dropdown-item:active {
-  color: #fff;
-  text-decoration: none;
-  background-color: #000;
-}
-
 .navbar-dark .navbar-toggler {
   border: 0;
 }
 
 .navbar-collapse {
   padding-bottom: 0rem;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
 }
 
 .card {
@@ -162,14 +162,14 @@ p {
   --bs-gutter-x: 0rem;
 }
 
+.row > * {
+  width: auto;
+}
+
 @media (max-width: 1500px) {
   .offset-1 {
     margin-left: 0;
   }
-}
-
-.row > * {
-  width: auto;
 }
 
 .btn-check:focus + .btn, .btn:focus {
@@ -273,6 +273,38 @@ p {
 /* ===== Scroll down ===== */
 .scrolldown {
   color: #ccc;
+}
+
+.scrolldown .down-and-up {
+  animation-name: dau;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+.scrolldown .down-and-up .con-container {
+  display: flex;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.scrolldown .down-and-up .con-container:hover {
+  color: #34FFC8;
+}
+
+@keyframes dau {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-1.8rem);
+  }
+  60% {
+    transform: translateY(-1.2rem);
+  }
+}
+
+.scrolldown .down-and-up:hover {
+  animation: none;
 }
 
 /* ==================== MAIN ==================== */
@@ -715,7 +747,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: 80vh;
   text-align: center;
 }
 

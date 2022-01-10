@@ -9,7 +9,7 @@ p{
 }
 
 .navbar > .container-fluid{
-    justify-content: space-around;
+    justify-content: space-between;
     @include j-media-up(md){
         justify-content: space-between;
     }
@@ -48,18 +48,18 @@ p{
     font-size: 1rem;
 }
 
-.dropdown-item.active, .dropdown-item:active {
-    color: #fff;
-    text-decoration: none;
-    background-color: #000;
-}
-
 .navbar-dark .navbar-toggler{
     border: 0;
 }
 
 .navbar-collapse {
     padding-bottom: 0rem;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
 }
 
 .card{
@@ -75,14 +75,14 @@ p{
     --bs-gutter-x: 0rem;
 }
 
+.row> * {
+    width: auto;
+}
+
 .offset-1 {
     @include j-media-up(xxl){
         margin-left: 0;
     }
-}
-
-.row> * {
-    width: auto;
 }
 
 .btn-check:focus+.btn, .btn:focus {
