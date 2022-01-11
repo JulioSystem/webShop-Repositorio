@@ -292,6 +292,24 @@
                 flex-direction: column;
             }
         }
+        .form-modify{
+            display: flex;
+            @include j-media-up(lg){
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .popover-modify{
+                display: flex;
+                align-items: center;
+                @include j-media-up(lg){
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        
     }
 }
 
