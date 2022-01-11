@@ -108,3 +108,11 @@ p{
     box-shadow: 0 0 0 0.25rem rgba(201, 196, 196, 0.527);
 }
 
+.text-color{
+    color: #6c757d;
+    font-weight: 700;
+    transition: 0.5s;
+    &:hover{
+        color: #000;
+    }
+}
