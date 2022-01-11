@@ -213,8 +213,11 @@
                     <div class="card-container col text-dark d-flex gap-5 pt-5">
                         <div class="myCard card text-center">
                             <div class="card-body">
-                                <h5 class="card-title">Título interesante</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                                <div class="card-container d-flex justify-content-center align-items-center flex-column">
+                                    <h5 class="card-title">Título interesante</h5>
+                                    <p class="card-text pb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                                    <a class="btn btn-myGreen fw-bold d-flex justify-content-center align-items-center" href="pag/noticias.html#firstArticle" role="button" >Leer más</a>
+                                </div>
                             </div>
                             <div class="card-footer d-flex justify-content-center">
                                 <img src="assets/img/mision/mision1.jpg" alt="" width="40px" height="40px" class="rounded-circle">
@@ -226,8 +229,11 @@
                         </div>
                         <div class="myCard card text-center">
                             <div class="card-body">
-                                <h5 class="card-title">Título interesante</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                                <div class="card-container d-flex justify-content-center align-items-center flex-column">
+                                    <h5 class="card-title">Título interesante</h5>
+                                    <p class="card-text pb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                                    <a class="btn btn-myGreen fw-bold d-flex justify-content-center align-items-center" href="pag/noticias.html#secobdArticle" role="button" >Leer más</a>
+                                </div>
                             </div>
                             <div class="card-footer d-flex justify-content-center">
                                 <img src="assets/img/mision/mision1.jpg" alt="" width="40px" height="40px" class="rounded-circle">
@@ -239,8 +245,11 @@
                         </div>
                         <div class="myCard card text-center">
                             <div class="card-body">
-                                <h5 class="card-title">Título interesante</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                                <div class="card-container d-flex justify-content-center align-items-center flex-column">
+                                    <h5 class="card-title">Título interesante</h5>
+                                    <p class="card-text pb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                                    <a class="btn btn-myGreen fw-bold d-flex justify-content-center align-items-center" href="pag/noticias.html#thirdArticle" role="button" >Leer más</a>
+                                </div>
                             </div>
                             <div class="card-footer d-flex justify-content-center">
                                 <img src="assets/img/mision/mision1.jpg" alt="" width="40px" height="40px" class="rounded-circle">
@@ -258,7 +267,7 @@
         <footer id="footer">
             <div class="infoFooter row justify-content-center align-items-center">
                 <div class="footerForm flex-column text-center">
-                    <h5>Navega rápidamente</h5>
+                    <h5 class="pt-4">Navega rápidamente</h5>
                     <ul class="nav nav-footer">
                         <li class="nav-item mb-2 px-4"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
                         <li class="nav-item mb-2 px-4"><a href="#" class="nav-link p-0 text-muted">Nosotros</a></li>
@@ -271,10 +280,11 @@
                     <form class="pb-5 pt-5">
                         <h5>Suscríbete para más noticias</h5>
                         <p class="pb-2">Monthly digest of whats new and exciting from us.</p>
-                        <div class="d-flex w-100 gap-2">
+                        <div class="form-modify w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">Correo Electrónico</label>
                             <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
-                            <button class="btn btn-dark" type="button">Suscribirse</button>
+                            <!-- <button class="btn btn-dark" type="button">Suscribirse</button> -->
+                            <a tabindex="0" class="btn btn-dark popover-modify" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-content="¡En hora buena!, te has suscrito">Suscribirse</a>
                         </div>
                     </form>
                 </div>
@@ -287,5 +297,11 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
 </body>
 </html>
