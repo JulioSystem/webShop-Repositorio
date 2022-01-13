@@ -178,6 +178,7 @@ p {
 
 .modal-content {
   background-color: #e5dddd;
+  color: #000;
 }
 
 @media (max-width: 1024px) {
