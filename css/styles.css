@@ -209,6 +209,19 @@ p {
   color: #000;
 }
 
+/* WOW */
+.animate__animated.animate__fadeInLeft {
+  animation-duration: 1.7s;
+}
+
+.animate__animated.animate__fadeInRight {
+  animation-duration: 1.7s;
+}
+
+.animate__animated.animate__fadeInUp {
+  animation-duration: 1.7s;
+}
+
 /* ======================================== INICIO ======================================== */
 /* ======================================== INICIO ======================================== */
 /* ======================================== INICIO ======================================== */
