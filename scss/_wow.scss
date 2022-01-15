@@ -1,0 +1,19 @@
+/* WOW */
+
+$animationDurationWow: 1.7s;
+$animationDelayWow: .6s;
+
+
+.animate__animated{
+    &.animate__fadeInLeft{
+        animation-duration: $animationDurationWow;
+        
+    }
+    &.animate__fadeInRight{
+        animation-duration: $animationDurationWow;
+    }
+    &.animate__fadeInUp{
+        animation-duration: $animationDurationWow;
+    }
+
+}
