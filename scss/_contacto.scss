@@ -2,10 +2,6 @@
 /* ======================================== CONTACT ======================================== */
 /* ======================================== CONTACT ======================================== */
 /* ==================== HEADER ==================== */
-.generalContainer{
-    @include borderPagination;
-}
-
 .containerContact{
     background-color: #fff;
     display: flex;
@@ -15,16 +11,32 @@
     height: 70vh;
     @include j-media-up(xxl){
         height: 80vh;
-        justify-content: center;
+    }
+    @include j-media-up(xl){
+        height: 75vh;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    @include j-media-up(lg){
+        height: 80vh;
         flex-direction: column;
-    }    
+    }
+    @include j-media-up(md){
+        justify-content: center;
+    }
     .img__container{
         
         padding-top: 20px;
+        @include j-media-up(xxl){
+            padding-top: 10px;
+        }
         img{
             width: 450px;
             @include j-media-up(xxl){
                 width: 200px;
+            }
+            @include j-media-up(xl){
+                width: 180px;
             }
         }
     }

@@ -1429,31 +1429,6 @@ p {
 /* ======================================== CONTACT ======================================== */
 /* ======================================== CONTACT ======================================== */
 /* ==================== HEADER ==================== */
-.generalContainer {
-  padding-top: 5rem;
-  padding-right: 20rem;
-  padding-bottom: 5rem;
-  padding-left: 20rem;
-}
-
-@media (max-width: 1250px) {
-  .generalContainer {
-    padding-top: 5rem;
-    padding-right: 15rem;
-    padding-bottom: 5rem;
-    padding-left: 15rem;
-  }
-}
-
-@media (max-width: 764px) {
-  .generalContainer {
-    padding-top: 3rem;
-    padding-right: 1.5rem;
-    padding-bottom: 3rem;
-    padding-left: 1.5rem;
-  }
-}
-
 .containerContact {
   background-color: #fff;
   display: flex;
@@ -1466,13 +1441,38 @@ p {
 @media (max-width: 1500px) {
   .containerContact {
     height: 80vh;
-    justify-content: center;
+  }
+}
+
+@media (max-width: 1250px) {
+  .containerContact {
+    height: 75vh;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerContact {
+    height: 80vh;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 764px) {
+  .containerContact {
+    justify-content: center;
   }
 }
 
 .containerContact .img__container {
   padding-top: 20px;
+}
+
+@media (max-width: 1500px) {
+  .containerContact .img__container {
+    padding-top: 10px;
+  }
 }
 
 .containerContact .img__container img {
@@ -1482,5 +1482,11 @@ p {
 @media (max-width: 1500px) {
   .containerContact .img__container img {
     width: 200px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .containerContact .img__container img {
+    width: 180px;
   }
 }
