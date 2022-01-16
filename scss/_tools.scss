@@ -69,3 +69,13 @@ $break-points:(
             padding: 3rem 1.5rem ;
         }
 }
+
+/* Title size*/
+
+.sizePrincipal{
+    font-size: calc(1.375rem + 1.2vw);
+}
+
+.sizeSecondary{
+    font-size: calc(1.3rem + .4vw);
+}
