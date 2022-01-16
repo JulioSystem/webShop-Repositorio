@@ -71,11 +71,28 @@ $break-points:(
 }
 
 /* Title size*/
-
 .sizePrincipal{
     font-size: calc(1.375rem + 1.2vw);
 }
 
 .sizeSecondary{
     font-size: calc(1.3rem + .4vw);
+}
+
+/* Color */
+.myGreen{
+    color: $firstColor;
+    &:hover{
+        color: $secondColor;
+    }
+}
+
+// Reusable modify
+.form-down{
+    display: flex;
+    @include j-media-up(lg){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

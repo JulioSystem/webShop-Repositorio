@@ -25,6 +25,27 @@ img {
   font-size: calc(1.3rem + .4vw);
 }
 
+/* Color */
+.myGreen {
+  color: #212121;
+}
+
+.myGreen:hover {
+  color: #34FFC8;
+}
+
+.form-down {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .form-down {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .container__boxing .boxing__reusable {
   display: flex;
   align-items: center;
