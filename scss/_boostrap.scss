@@ -65,6 +65,20 @@ p{
 .card{
     background-color: $cardColor;
     color: #fff;
+    width: 400px;
+    height: 370px;
+    @include j-media-up(xl){
+        width: 350px;
+        height: 450px;
+    }
+    @include j-media-up(xl){
+        width: auto;
+        height: auto;
+    }
+}
+
+.card-body{
+    display: flex;
 }
 
 .card-footer{

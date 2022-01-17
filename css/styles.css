@@ -56,6 +56,12 @@ img {
   font-weight: bold;
 }
 
+@media (max-width: 764px) {
+  .container__boxing .boxing__reusable .boxing-text > h2, .misionTitle .boxing-text > h2, .fourthSection > h2 {
+    font-size: 2.5rem;
+  }
+}
+
 .container__boxing .boxing__reusable .boxing-text > p, .misionTitle .boxing-text > p, .fourthSection > p {
   font-weight: medium;
   font-size: 1.15rem;
@@ -182,6 +188,26 @@ p {
 .card {
   background-color: #4c4c4c;
   color: #fff;
+  width: 400px;
+  height: 370px;
+}
+
+@media (max-width: 1250px) {
+  .card {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .card {
+    width: auto;
+    height: auto;
+  }
+}
+
+.card-body {
+  display: flex;
 }
 
 .card-footer {
