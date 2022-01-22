@@ -15,106 +15,104 @@
     <title>Design Magical: Contacto</title>
 </head>
 <body>
-    <!-- ========== PRINCIPAL CONTAINER ========== -->
-    <div class="containerPrincipal">
-        <!-- ========== HEADER ========== -->
-        <header id="headerSecondary">
-            <!-- ===== Navigation ===== -->
-            <nav id="nav" class="navbar navbar-expand-lg navbar-dark container-fluid pb-5">
-                <div class="container-fluid fw-bold">
-                    <a class="navbar-brand" href="../index.html">Design Magical</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="galeria.html">Galeria</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="noticias.html">Noticias</a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="button button-animated fw-bold d-flex justify-content-center align-items-center active" href="contacto.html" role="button">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- ===== Contact ===== -->
-            <div class="containerContact wow animate__animated animate__fadeIn">
-                <div class="form__container">
-                    <form action="">
-                        <div>
-                            <h1 class="sizeSecondary">Contacta con nosotros</h1>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Nombres" required>
-                            <label for="floatingInput">Nombres</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="Correo electrónico" required>
-                            <label for="floatingInput">Correo electrónico</label>
-                        </div>
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea" required></textarea>
-                            <label for="floatingTextarea">Mensaje</label>
-                        </div>
-                        <div class="pt-3">
-                            <label for="terminos">Acepto los términos y condiciones
-                                <input class="" type="checkbox" name="terminos" id="terminos" required>
-                            </label>
-                        </div>
-                        <div class="pt-3">
-                            <input class="btn btn-myGreen fw-bold" type="submit" value="Enviar">
-                            <input class="btn btn-darking" type="reset" value="Resetear">
-                        </div>
-                    </form>
-                </div>
-                <div class="img__container">
-                    <img src="../assets/img/contact/contact.svg" alt="">
-                </div>
-            </div>
-        </header>
-        <!-- ========== FOOTER ========== -->
-        <footer id="footer">
-            <div class="infoFooter row justify-content-center align-items-center">
-                <div class="footerForm flex-column text-center">
-                    <h5 class="pt-4">Navega rápidamente</h5>
-                    <ul class="nav nav-footer">
-                        <li class="nav-item mb-2 px-4"><a href="../index.html" class="nav-link p-0 text-color">Inicio</a></li>
-                        <li class="nav-item mb-2 px-4"><a href="nosotros.html" class="nav-link p-0 text-color">Nosotros</a></li>
-                        <li class="nav-item mb-2 px-4"><a href="galeria.html" class="nav-link p-0 text-color">Galeria</a></li>
-                        <li class="nav-item mb-2 px-4"><a href="noticias.html" class="nav-link p-0 text-color">Noticias</a></li>
-                        <li class="nav-item mb-2 px-4"><a href="contacto.html" class="nav-link p-0 text-black text-color">Contacto</a></li>
+    <!-- ========== HEADER ========== -->
+    <header id="headerSecondary">
+        <!-- ===== Navigation ===== -->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark container-fluid pb-5">
+            <div class="container-fluid fw-bold">
+                <a class="navbar-brand" href="../index.html">Design Magical</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="button button-animated fw-bold d-flex justify-content-center align-items-center active" href="contacto.html" role="button">Contacto</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="footerForm text-center">
-                    <form class="pb-5 pt-5">
-                        <h5 class="pb-2">Suscríbete para más noticias</h5>
-                        <div class="form-modify w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Correo Electrónico</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
-                            <a tabindex="0" class="btn btn-dark popover-modify" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-content="¡En hora buena!, te has suscrito">Suscribirse</a>
-                        </div>
-                    </form>
-                </div>
             </div>
-            <div class="copyright">
-                <div class="d-flex justify-content-center">
-                    <p>&copy; 2021 Julio Honorio, CoderHouse student</p>
-                </div>
+        </nav>
+        <!-- ===== Contact ===== -->
+        <div class="containerContact wow animate__animated animate__fadeIn">
+            <div class="form__container">
+                <form action="">
+                    <div>
+                        <h1 class="sizeSecondary">Contacta con nosotros</h1>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombres" required>
+                        <label for="floatingInput">Nombres</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Correo electrónico" required>
+                        <label for="floatingInput">Correo electrónico</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea" required></textarea>
+                        <label for="floatingTextarea">Mensaje</label>
+                    </div>
+                    <div class="pt-3">
+                        <label for="terminos">Acepto los términos y condiciones
+                            <input class="" type="checkbox" name="terminos" id="terminos" required>
+                        </label>
+                    </div>
+                    <div class="pt-3">
+                        <input class="btn btn-myGreen fw-bold" type="submit" value="Enviar">
+                        <input class="btn btn-darking" type="reset" value="Resetear">
+                    </div>
+                </form>
             </div>
-        </footer>
-    </div>
+            <div class="img__container">
+                <img src="../assets/img/contact/contact.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer">
+        <div class="infoFooter row justify-content-center align-items-center">
+            <div class="footerForm flex-column text-center">
+                <h5 class="pt-4">Navega rápidamente</h5>
+                <ul class="nav nav-footer">
+                    <li class="nav-item mb-2 px-4"><a href="../index.html" class="nav-link p-0 text-color">Inicio</a></li>
+                    <li class="nav-item mb-2 px-4"><a href="nosotros.html" class="nav-link p-0 text-color">Nosotros</a></li>
+                    <li class="nav-item mb-2 px-4"><a href="galeria.html" class="nav-link p-0 text-color">Galeria</a></li>
+                    <li class="nav-item mb-2 px-4"><a href="noticias.html" class="nav-link p-0 text-color">Noticias</a></li>
+                    <li class="nav-item mb-2 px-4"><a href="contacto.html" class="nav-link p-0 text-black text-color">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footerForm text-center">
+                <form class="pb-5 pt-5">
+                    <h5 class="pb-2">Suscríbete para más noticias</h5>
+                    <div class="form-modify w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Correo Electrónico</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
+                        <a tabindex="0" class="btn btn-dark popover-modify" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-content="¡En hora buena!, te has suscrito">Suscribirse</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="d-flex justify-content-center">
+                <p>&copy; 2021 Julio Honorio, CoderHouse student</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Js - Boostrap - Wow.js - Codigo para ejecutar los popover y el wow -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/wow.js"></script>
     <script>
