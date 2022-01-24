@@ -1,5 +1,7 @@
 # Design Magical
 
+![preview img](assets/img/Caratula.png)
+
 ## Información
 
 * **Curso:** Desarrollo Web / Coderhouse
@@ -40,5 +42,3 @@
 * **LinkedIn:** https://www.linkedin.com/in/juliodeveloper
 * **Instagram:** https://www.instagram.com/juliodeveloper
 * **GitHub:** https://github.com/JulioSystem
-
-![preview img](assets/img/Caratula.png)
