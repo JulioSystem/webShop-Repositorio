@@ -40,3 +40,5 @@
 * **LinkedIn:** https://www.linkedin.com/in/juliodeveloper
 * **Instagram:** https://www.instagram.com/juliodeveloper
 * **GitHub:** https://github.com/JulioSystem
+
+![preview img](assets/img/Caratula.png)
