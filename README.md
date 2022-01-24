@@ -8,7 +8,7 @@
 
 * **Comisión:** 27300
 
-* **Profesora:** Juan Manuel Van Oyen
+* **Profesor:** Juan Manuel Van Oyen
 
 * **Tutor:** Santiago Andres Strano
 
