@@ -18,7 +18,7 @@
 
 ## Breve resumen del proyecto
 
-[DESIGN MEDICAL](https://juliosystem.github.io/Design-Magical/) tiene como enfoque dar los mejores trabajos personalizados a cada cliente y aún bajo costo, para que sea asequible para todos.
+[DESIGN MAGICAL](https://jhrdeveloper.github.io/Design-Magical/) tiene como enfoque dar los mejores trabajos personalizados a cada cliente y aún bajo costo, para que sea asequible para todos.
 
 ## Herramientas utilizadas
 
