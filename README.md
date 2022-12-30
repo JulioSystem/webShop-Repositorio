@@ -14,7 +14,7 @@
 
 * **Desarrollado y diseñado por:** Julio Honorio Roman
 
-* **Link del proyecto final:** https://juliosystem.github.io/Design-Magical/
+* **Link del proyecto final:** [Design Magical](https://jhrdeveloper.github.io/Design-Magical/)
 
 ## Breve resumen del proyecto
 
@@ -41,4 +41,4 @@
 
 * **LinkedIn:** https://www.linkedin.com/in/juliodeveloper
 * **Instagram:** https://www.instagram.com/juliodeveloper
-* **GitHub:** https://github.com/JulioSystem
+* **GitHub:** https://github.com/jhrdeveloper
